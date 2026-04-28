@@ -24,7 +24,7 @@ const products: Product[] = [
     description:
       "AI-powered operational reporting and analytics platform for insurance companies, offering scheduled reports, custom dashboards, and advanced data pipelines.",
     icon: FiBarChart2,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Automated Reports (Excel, CSV, PDF)",
       "Custom Dashboards (Power BI/Tableau)",
@@ -38,7 +38,7 @@ const products: Product[] = [
     description:
       "A secure intermediary platform that anonymises sensitive data before sending prompts to LLMs like ChatGPT, ensuring data privacy and compliance while preserving conversational context.",
     icon: FiLock,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "PII Anonymisation",
       "Secure LLM Interactions",
@@ -52,7 +52,7 @@ const products: Product[] = [
     description:
       "AI marketing solution that generates complete campaigns from a simple prompt, including visuals, copy, and strategy. Automatically tracks performance and reallocates budget for optimal ROI.",
     icon: FiTrendingUp,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Campaign Generation",
       "Visual & Copy AI",
@@ -108,7 +108,7 @@ export default function Products() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
+            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
             style={{ backgroundColor: "rgba(147, 197, 253, 0.1)" }}
           >
             <FiLayers

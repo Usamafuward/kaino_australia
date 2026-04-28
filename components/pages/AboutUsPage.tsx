@@ -128,7 +128,7 @@ export default function AboutPage() {
   return (
     <main className="overflow-hidden">
       {/* SECTION: PAGE HERO */}
-      <section className="relative min-h-screen bg-linear-to-br from-slate-900 via-blue-900 to-indigo-900 text-white flex justify-center items-center overflow-hidden">
+      <section className="relative min-h-screen bg-brand-deep text-white flex justify-center items-center overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
@@ -154,7 +154,7 @@ export default function AboutPage() {
           >
             {/* Badge */}
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-6 py-2 mb-6"
+              className="inline-flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 mb-6"
               variants={itemVariants}
             >
               <FiBookOpen className="text-sky-400 mr-2" />
@@ -188,7 +188,7 @@ export default function AboutPage() {
 
             {/* CTA Button */}
             <motion.button
-              className="group relative bg-linear-to-r from-sky-500 to-blue-600 text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-sky-500/25"
+              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -202,7 +202,7 @@ export default function AboutPage() {
                 Discover Our Story
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.button>
           </motion.div>
         </div>
@@ -231,15 +231,15 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
           >
             {/* Badge */}
-            <motion.div className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-2 mb-6">
-              <FiBookOpen className="mr-2 text-blue-600" />
-              <span className="text-sm font-medium text-blue-700">
+            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+              <FiBookOpen className="mr-2 text-brand-deep" />
+              <span className="text-sm font-medium text-brand-deep">
                 How It Started
               </span>
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-slate-800 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
                 Our Story
               </span>
             </h2>
@@ -329,15 +329,15 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <motion.div className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-2 mb-6">
-              <FiTarget className="mr-2 text-blue-600" />
-              <span className="text-sm font-medium text-blue-700">
+            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+              <FiTarget className="mr-2 text-brand-deep" />
+              <span className="text-sm font-medium text-brand-deep">
                 Our Purpose
               </span>
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-slate-800 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
                 Mission
               </span>
             </h2>
@@ -350,10 +350,10 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="bg-linear-to-br from-slate-900 via-blue-900 to-indigo-900 rounded-2xl sm:rounded-3xl p-8 sm:p-10 md:p-12 shadow-2xl relative overflow-hidden">
+            <div className="bg-linear-to-br from-brand-deep to-brand-blue rounded-2xl sm:rounded-3xl p-8 sm:p-10 md:p-12 shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 bg-[linear-gradient(rgba(147,197,253,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(147,197,253,0.03)_1px,transparent_1px)] bg-size-[2rem_2rem]" />
-              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl" />
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl" />
+              <div className="absolute top-0 right-0 w-64 h-64 bg-brand-blue/10 rounded-full blur-3xl" />
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-brand-blue/10 rounded-full blur-3xl" />
 
               <div className="relative z-10 text-center">
                 <p className="text-xl sm:text-2xl md:text-3xl text-white font-medium leading-relaxed">
@@ -386,15 +386,15 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <motion.div className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-2 mb-6">
-              <FiHeart className="mr-2 text-blue-600" />
-              <span className="text-sm font-medium text-blue-700">
+            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+              <FiHeart className="mr-2 text-brand-deep" />
+              <span className="text-sm font-medium text-brand-deep">
                 What We Stand For
               </span>
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-slate-800 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
                 Values & Beliefs
               </span>
             </h2>
@@ -409,9 +409,9 @@ export default function AboutPage() {
           >
             {values.map((value) => {
               const colorMap: Record<string, { bg: string; icon: string; border: string }> = {
-                blue: { bg: "bg-blue-100", icon: "text-blue-600", border: "hover:border-blue-200" },
-                indigo: { bg: "bg-indigo-100", icon: "text-indigo-600", border: "hover:border-indigo-200" },
-                sky: { bg: "bg-sky-100", icon: "text-sky-600", border: "hover:border-sky-200" },
+                blue: { bg: "bg-blue-100", icon: "text-brand-deep", border: "hover:border-blue-200" },
+                indigo: { bg: "bg-indigo-100", icon: "text-brand-deep", border: "hover:border-indigo-200" },
+                sky: { bg: "bg-sky-100", icon: "text-brand-blue", border: "hover:border-sky-200" },
                 violet: { bg: "bg-violet-100", icon: "text-violet-600", border: "hover:border-violet-200" },
               };
               const colors = colorMap[value.color];
@@ -462,15 +462,15 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
           >
             {/* Badge */}
-            <motion.div className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-3 mb-8">
-              <FiUsers className="mr-2 text-blue-600" />
-              <span className="text-sm font-medium text-blue-700">
+            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-3 mb-8">
+              <FiUsers className="mr-2 text-brand-deep" />
+              <span className="text-sm font-medium text-brand-deep">
                 The People Behind Kainovation
               </span>
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-slate-800 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
                 Meet the Team
               </span>
             </h2>
@@ -491,7 +491,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-linear-to-br from-blue-500/6 to-indigo-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-br from-brand-blue/ to-brand-deep/ rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="relative z-10 flex flex-col sm:flex-row items-start gap-6">
                   <div className="shrink-0 w-full sm:w-48">
@@ -506,7 +506,7 @@ export default function AboutPage() {
                         <div className="absolute inset-0 bg-linear-to-t from-blue-900/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       </div>
                     ) : (
-                      <div className="w-full h-64 sm:h-auto aspect-4/5 rounded-xl bg-linear-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                      <div className="w-full h-64 sm:h-auto aspect-4/5 rounded-xl bg-linear-to-br from-brand-blue to-brand-deep flex items-center justify-center shadow-lg">
                         <span className="text-4xl sm:text-5xl font-black text-white/90">
                           {member.initials}
                         </span>
@@ -517,10 +517,10 @@ export default function AboutPage() {
                   <div className="grow">
                     <div className="flex justify-between items-start mb-3">
                       <div>
-                        <h3 className="text-xl font-bold text-slate-800 group-hover:text-blue-700 transition-colors duration-300">
+                        <h3 className="text-xl font-bold text-slate-800 group-hover:text-brand-deep transition-colors duration-300">
                           {member.name}
                         </h3>
-                        <p className="text-sm text-blue-600 font-semibold bg-blue-50 px-3 py-1 rounded-full inline-block mt-1">
+                        <p className="text-sm text-brand-deep font-semibold bg-blue-50 px-3 py-1 rounded-full inline-block mt-1">
                           {member.title}
                         </p>
                       </div>
@@ -530,7 +530,7 @@ export default function AboutPage() {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={`${member.name}'s LinkedIn Profile`}
-                          className="text-blue-500 hover:text-blue-600 transition-colors duration-300 ml-4 bg-blue-50 p-2 rounded-full hover:bg-blue-100"
+                          className="text-brand-deep hover:text-brand-deep transition-colors duration-300 ml-4 bg-blue-50 p-2 rounded-full hover:bg-blue-100"
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.95 }}
                         >

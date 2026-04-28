@@ -24,28 +24,28 @@ export default function Clients() {
       description:
         "Marketing, data, and tech all in perfect harmony - everything works together so you don’t have to juggle.",
       icon: FiAward,
-      gradient: "from-sky-500 to-blue-600",
+      gradient: "from-brand-blue to-brand-deep",
     },
     {
       title: "Data-Driven Decisions",
       description:
         "We let insights lead the way. Smarter decisions, better campaigns, and results you can actually measure.",
       icon: FiClock,
-      gradient: "from-blue-500 to-indigo-600",
+      gradient: "from-brand-blue to-brand-deep",
     },
     {
       title: "Scalable, Custom Solutions",
       description:
         "From AI to software to marketing campaigns, we build solutions that grow with your business - flexible, future-proof, and made to fit.",
       icon: FiHeart,
-      gradient: "from-indigo-500 to-blue-600",
+      gradient: "from-brand-blue to-brand-deep",
     },
     {
       title: "Agile, Collaborative Team",
       description:
         "Think of us as an extension of your team - hands-on, communicative, and always working toward your wins.",
       icon: FiHeart,
-      gradient: "from-indigo-500 to-blue-600",
+      gradient: "from-brand-blue to-brand-deep",
     },
   ];
 
@@ -67,10 +67,10 @@ export default function Clients() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
+            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
             style={{ backgroundColor: "rgba(147, 197, 253, 0.1)" }}
           >
-            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-500 rounded-full mr-2 animate-pulse" />
+            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-brand-blue rounded-full mr-2 animate-pulse" />
             <span
               className="text-xs sm:text-sm md:text-base font-medium"
               style={{ color: "#10064C" }}
@@ -102,7 +102,7 @@ export default function Clients() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
+            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
             style={{ backgroundColor: "rgba(147, 197, 253, 0.1)" }}
           >
             <FiZap

@@ -35,7 +35,7 @@ export default function Services() {
       description:
         "Build scalable, secure, and high-performance applications that support your marketing and business goals. Our solutions integrate seamlessly with your systems, powering smarter campaigns, customer experiences, and digital innovation.",
       icon: FiCode,
-      gradient: "from-blue-500 to-indigo-600",
+      gradient: "from-brand-blue to-brand-deep",
       features: [
         "Full-Stack Development",
         "API Integrations",
@@ -51,7 +51,7 @@ export default function Services() {
       description:
         "We embed ourselves as a unified team, aligning marketing, brand, and technology to execute seamlessly. Driven by strategic insight, every effort works in sync to maximise impact.",
       icon: FiTrendingUp,
-      gradient: "from-blue-500 to-indigo-600",
+      gradient: "from-brand-blue to-brand-deep",
       features: [
         "Marketing & Brand Strategy",
         "Website Experience & SEO",
@@ -67,7 +67,7 @@ export default function Services() {
       description:
         "Design, build, and optimise scalable data systems that turn raw information into actionable insights. From legacy platforms to modern cloud solutions, we create a reliable infrastructure that powers smarter decisions, drives efficiency, and supports growth across your business.",
       icon: FiDatabase,
-      gradient: "from-blue-500 to-indigo-600",
+      gradient: "from-brand-blue to-brand-deep",
       features: [
         "ETL/ELT Pipelines",
         "Cloud Data Lakes",
@@ -83,7 +83,7 @@ export default function Services() {
       description:
         "Harness intelligent systems to optimise business processes, predict trends, and automate smarter decisions across marketing, operations, and strategy. Our solutions turn data into actionable insights that drive growth, efficiency, and measurable results.",
       icon: FiCpu,
-      gradient: "from-indigo-500 to-blue-600",
+      gradient: "from-brand-blue to-brand-deep",
       features: [
         "Predictive Analytics",
         "Neural Networks",
@@ -114,7 +114,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
+            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
             style={{ backgroundColor: "rgba(147, 197, 253, 0.1)" }}
           >
             <FiZap
@@ -158,7 +158,7 @@ export default function Services() {
               }}
               className="bg-white/60 backdrop-blur-sm border border-white/50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-md sm:shadow-lg flex flex-col items-center text-center transition-colors"
             >
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-linear-to-br from-blue-500 to-indigo-600 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md sm:shadow-lg">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-linear-to-br from-brand-blue to-brand-deep rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md sm:shadow-lg">
                 <FiZap className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
               </div>
               <h3 className="font-bold text-xl text-gray-800 mb-2 sm:mb-3">1. Concept & Branding</h3>
@@ -176,7 +176,7 @@ export default function Services() {
               }}
               className="bg-white/60 backdrop-blur-sm border border-white/50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-md sm:shadow-lg flex flex-col items-center text-center transition-colors"
             >
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-linear-to-br from-blue-500 to-indigo-600 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md sm:shadow-lg">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-linear-to-br from-brand-blue to-brand-deep rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md sm:shadow-lg">
                 <FiCode className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
               </div>
               <h3 className="font-bold text-xl text-gray-800 mb-2 sm:mb-3">2. Product Creation</h3>
@@ -194,7 +194,7 @@ export default function Services() {
               }}
               className="bg-white/60 backdrop-blur-sm border border-white/50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-md sm:shadow-lg flex flex-col items-center text-center transition-colors"
             >
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-linear-to-br from-blue-500 to-indigo-600 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md sm:shadow-lg">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-linear-to-br from-brand-blue to-brand-deep rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md sm:shadow-lg">
                 <FiArrowRight className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
               </div>
               <h3 className="font-bold text-xl text-gray-800 mb-2 sm:mb-3">3. Delivery & Insights</h3>
@@ -212,7 +212,7 @@ export default function Services() {
               }}
               className="bg-white/60 backdrop-blur-sm border border-white/50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-md sm:shadow-lg flex flex-col items-center text-center transition-colors"
             >
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-linear-to-br from-blue-500 to-indigo-600 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md sm:shadow-lg">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-linear-to-br from-brand-blue to-brand-deep rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md sm:shadow-lg">
                 <FiDatabase className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
               </div>
               <h3 className="font-bold text-xl text-gray-800 mb-2 sm:mb-3">4. Ongoing Management</h3>
@@ -247,7 +247,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
         >
           <motion.button
-            className="group relative text-white font-bold bg-[#FF8600] hover:bg-[#FF8600]/90 py-3 px-8 sm:py-3.5 sm:px-10 md:py-4 md:px-12 rounded-full overflow-hidden shadow-xl sm:shadow-2xl"
+            className="group relative text-white font-bold bg-brand-orange hover:bg-brand-orange/90 py-3 px-8 sm:py-3.5 sm:px-10 md:py-4 md:px-12 rounded-full overflow-hidden shadow-xl sm:shadow-2xl"
             whileHover={{
               scale: 1.02,
               boxShadow: "0px 15px 30px -8px rgba(16, 6, 76, 0.3)",
@@ -261,7 +261,7 @@ export default function Services() {
               </span>
             </Link>
             <motion.div
-              className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute inset-0 bg-linear-to-r bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity"
               layoutId="button-bg"
             />
           </motion.button>

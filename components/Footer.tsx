@@ -134,7 +134,7 @@ export default function Footer() {
                   <span className="relative text-white">
                     VATION
                     <motion.div
-                      className="absolute -bottom-1 left-0 w-full h-0.5 bg-linear-to-r from-blue-400 to-indigo-400 origin-left"
+                      className="absolute -bottom-1 left-0 w-full h-0.5 bg-linear-to-r from-brand-blue to-brand-deep origin-left"
                       initial={{ scaleX: 0 }}
                       animate={{ scaleX: 1 }}
                       transition={{ duration: 0.8, delay: 0.2 }}
@@ -273,7 +273,7 @@ export default function Footer() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter email"
-                    className="w-full px-4 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 text-sm"
+                    className="w-full px-4 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-brand-blue/ text-sm"
                     disabled={isLoading}
                   />
                   <motion.button
@@ -366,7 +366,7 @@ export default function Footer() {
               {/* Newsletter Details */}
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
                 <div className="flex items-center justify-center gap-3 text-gray-700 text-sm mb-2">
-                  <FiMail className="text-blue-600" />
+                  <FiMail className="text-brand-deep" />
                   <span className="font-medium">
                     Welcome to Kainovation Newsletter
                   </span>
@@ -379,7 +379,7 @@ export default function Footer() {
               {/* Action Button */}
               <button
                 onClick={() => setShowSuccess(false)}
-                className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                className="w-full bg-brand-blue text-white font-semibold py-3 rounded-lg hover:bg-brand-deep transition-colors"
               >
                 Awesome, thanks!
               </button>

@@ -42,7 +42,7 @@ export default function Hero() {
 
   return (
     <section 
-      className="relative min-h-screen bg-linear-to-br from-slate-900 via-blue-900 to-indigo-900 text-white flex justify-center items-center overflow-hidden"
+      className="relative min-h-screen bg-brand-deep  text-white flex justify-center items-center overflow-hidden"
       id='hero'
     >
       {/* Background Elements */}
@@ -65,7 +65,7 @@ export default function Hero() {
           >
             {/* Badge */}
             <motion.div 
-              className="inline-flex items-center bg-linear-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-6 py-2 mb-6"
+              className="inline-flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 mb-6"
               variants={itemVariants}
             >
               <FiZap className="text-sky-400 mr-2" />
@@ -120,7 +120,7 @@ export default function Hero() {
 
             {/* CTA Button */}
             <motion.button 
-              className="group relative bg-linear-to-r from-sky-500 to-blue-600 text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-sky-500/25"
+              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -130,7 +130,7 @@ export default function Hero() {
                 Lets dive in
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.button>
           </motion.div>
 
@@ -143,11 +143,11 @@ export default function Hero() {
             <div className="relative w-full max-w-2xl mx-auto h-[500px] perspective-1000">
               {/* Company Image Placeholder */}
               <motion.div 
-                className="absolute top-16 left-1/2 transform -translate-x-1/2 w-64 h-48 bg-linear-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-sm rounded-2xl border border-blue-500/30 shadow-xl flex items-center justify-center"
+                className="absolute top-16 left-1/2 transform -translate-x-1/2 w-64 h-48 bg-linear-to-br from-brand-blue/ to-brand-deep/ backdrop-blur-sm rounded-2xl border border-white/30 shadow-xl flex items-center justify-center"
                 whileHover={{ scale: 1.02 }}
               >
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-linear-to-br from-sky-400 to-blue-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-20 h-20 bg-linear-to-br from-brand-blue to-brand-deep rounded-xl mx-auto mb-4 flex items-center justify-center">
                     <span className="text-white text-3xl font-bold">K</span>
                   </div>
                   <div className="text-blue-300 text-sm font-medium">Company Logo</div>
@@ -161,24 +161,24 @@ export default function Hero() {
                 variants={pulseVariants}
                 animate="animate"
               >
-                <div className="w-full h-full bg-linear-to-br from-sky-500/30 to-blue-600/30 rounded-3xl backdrop-blur-sm border border-sky-500/50 shadow-2xl transform rotate-12" />
+                <div className="w-full h-full bg-linear-to-br from-brand-blue/ to-brand-deep/ rounded-3xl backdrop-blur-sm border border-white/30 shadow-2xl transform rotate-12" />
                 <div className="absolute inset-4 bg-linear-to-br from-white/20 to-transparent rounded-2xl" />
-                <div className="absolute inset-8 bg-linear-to-br from-sky-500/40 to-blue-600/40 rounded-xl" />
+                <div className="absolute inset-8 bg-linear-to-br from-brand-blue/ to-brand-deep/ rounded-xl" />
                 
                 {/* Center Icon */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-linear-to-br from-sky-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-linear-to-br from-brand-blue to-brand-deep rounded-2xl flex items-center justify-center shadow-lg">
                   <FiTrendingUp className="text-white text-2xl" />
                 </div>
               </motion.div>
 
               {/* Floating Cards */}
               <motion.div 
-                className="absolute top-0 right-0 w-48 h-32 bg-linear-to-br from-indigo-500/20 to-blue-500/20 backdrop-blur-sm rounded-2xl border border-indigo-500/30 shadow-xl"
+                className="absolute top-0 right-0 w-48 h-32 bg-linear-to-br from-brand-deep/ to-brand-blue/ backdrop-blur-sm rounded-2xl border border-white/30 shadow-xl"
                 animate={{ rotate: [0, 5, 0], y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
                 <div className="p-4 h-full flex flex-col justify-between">
-                  <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center">
+                  <div className="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center">
                     <FiDatabase className="text-white text-sm" />
                   </div>
                   <div className="space-y-2">
@@ -189,12 +189,12 @@ export default function Hero() {
               </motion.div>
 
               <motion.div 
-                className="absolute bottom-0 left-0 w-56 h-36 bg-linear-to-br from-blue-500/20 to-sky-500/20 backdrop-blur-sm rounded-2xl border border-blue-500/30 shadow-xl"
+                className="absolute bottom-0 left-0 w-56 h-36 bg-linear-to-br from-brand-deep/ to-brand-blue/ backdrop-blur-sm rounded-2xl border border-white/30 shadow-xl"
                 animate={{ rotate: [0, -3, 0], y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity }}
               >
                 <div className="p-4 h-full flex flex-col justify-between">
-                  <div className="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center">
+                  <div className="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center">
                     <FiCpu className="text-white text-lg" />
                   </div>
                   <div className="space-y-2">

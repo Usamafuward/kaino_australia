@@ -37,7 +37,7 @@ const projectsData: Product[] = [
     description:
       "AI-powered operational reporting and analytics platform for insurance companies, offering scheduled reports, custom dashboards, and advanced data pipelines.",
     icon: FiBarChart2,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Automated Reports (Excel, CSV, PDF)",
       "Custom Dashboards (Power BI/Tableau)",
@@ -45,14 +45,14 @@ const projectsData: Product[] = [
       "ETL Pipelines with SQL/Python",
     ],
     status: "Beta",
-    statusColor: "from-blue-500 to-indigo-600"
+    statusColor: "from-brand-blue to-brand-deep"
   },
   {
     name: "Invisiq",
     description:
       "A secure intermediary platform that anonymises sensitive data before sending prompts to LLMs like ChatGPT, ensuring data privacy and compliance while preserving conversational context.",
     icon: FiLock,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "PII Anonymisation",
       "Secure LLM Interactions",
@@ -60,14 +60,14 @@ const projectsData: Product[] = [
       "Policy Compliance",
     ],
     status: "Beta",
-    statusColor: "from-blue-500 to-indigo-600"
+    statusColor: "from-brand-blue to-brand-deep"
   },
   {
     name: "Marketing Copilot",
     description:
       "AI marketing solution that generates complete campaigns from a simple prompt, including visuals, copy, and strategy. Automatically tracks performance and reallocates budget for optimal ROI.",
     icon: FiTrendingUp,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Campaign Generation",
       "Visual & Copy AI",
@@ -75,14 +75,14 @@ const projectsData: Product[] = [
       "Auto Budget Optimization",
     ],
     status: "Completed",
-    statusColor: "from-blue-500 to-indigo-600"
+    statusColor: "from-brand-blue to-brand-deep"
   },
   {
     name: "Document OCR Solution",
     description:
       "Intelligent OCR tool that extracts key data from diverse documents, including handwritten and printed content, for compliance, processing, or archival needs.",
     icon: FiFileText,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Multi-format Document Support",
       "Handwritten & Printed Text",
@@ -90,14 +90,14 @@ const projectsData: Product[] = [
       "High Accuracy Layout Handling",
     ],
     status: "Completed",
-    statusColor: "from-blue-500 to-indigo-600"
+    statusColor: "from-brand-blue to-brand-deep"
   },
   {
     name: "SAP Entry Automation for Invoices",
     description:
       "Automates extraction and formatting of invoice data for SAP and spreadsheet use. Delivers accurate results even with low-quality scans.",
     icon: FiFilePlus,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Invoice Data Extraction",
       "SAP-ready Output",
@@ -105,14 +105,14 @@ const projectsData: Product[] = [
       "Reduces Manual Entry",
     ],
     status: "Beta",
-    statusColor: "from-blue-500 to-indigo-600"
+    statusColor: "from-brand-blue to-brand-deep"
   },
   {
     name: "AI Insurance Agent",
     description:
       "Virtual agent that explains insurance policies, coverage, and terms in simple language, escalating complex issues to human agents as needed.",
     icon: FiShield,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Policy Explanation",
       "User-friendly Conversations",
@@ -120,14 +120,14 @@ const projectsData: Product[] = [
       "Trustworthy Support",
     ],
     status: "Beta",
-    statusColor: "from-blue-500 to-indigo-600"
+    statusColor: "from-brand-blue to-brand-deep"
   },
   {
     name: "AI Receptionist",
     description:
       "Voice-enabled assistant for appointment scheduling across various sectors, handling bookings, confirmations, and calendar updates in real time.",
     icon: FiCalendar,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Voice-enabled Booking",
       "Real-time Calendar Sync",
@@ -135,14 +135,14 @@ const projectsData: Product[] = [
       "High-volume Scheduling",
     ],
     status: "Beta",
-    statusColor: "from-blue-500 to-indigo-600"
+    statusColor: "from-brand-blue to-brand-deep"
   },
   {
     name: "Support AI Assistant",
     description:
       "Conversational AI that provides real-time, context-aware support via chat and voice by integrating with your internal documentation and resources, reducing dependency on human agents.",
     icon: FiMessageCircle,
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Voice & Chat Support",
       "Knowledge Base Integration",
@@ -150,7 +150,7 @@ const projectsData: Product[] = [
       "Customer & Employee Support",
     ],
     status: "Completed",
-    statusColor: "from-blue-500 to-indigo-600"
+    statusColor: "from-brand-blue to-brand-deep"
   },
 ];
 
@@ -195,7 +195,7 @@ export default function ProjectsPage() {
   return (
     <main className="overflow-hidden">
       {/* SECTION: PAGE HERO */}
-      <section className="relative min-h-screen bg-linear-to-br from-slate-900 via-blue-900 to-indigo-900 text-white flex justify-center items-center overflow-hidden">
+      <section className="relative min-h-screen bg-brand-deep text-white flex justify-center items-center overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
@@ -221,7 +221,7 @@ export default function ProjectsPage() {
           >
             {/* Badge */}
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-6 py-2 mb-6"
+              className="inline-flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 mb-6"
               variants={itemVariants}
             >
               <FiLayers className="text-sky-400 mr-2" />
@@ -279,7 +279,7 @@ export default function ProjectsPage() {
 
             {/* CTA Button */}
             <motion.button
-              className="group relative bg-linear-to-r from-sky-500 to-blue-600 text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-sky-500/25"
+              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -293,7 +293,7 @@ export default function ProjectsPage() {
                 Explore Our Projects
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.button>
           </motion.div>
         </div>
@@ -321,7 +321,7 @@ export default function ProjectsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-2 mb-6">
+            <div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
               <FiZap className="mr-2 text-base" style={{ color: "#10064C" }} />
               <span
                 className="text-base font-medium"

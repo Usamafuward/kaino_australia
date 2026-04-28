@@ -100,13 +100,13 @@ export default function TestimonialCard({ quote, client, image, keywords }: Test
         transition={{ duration: 0.3 }}
       >
         <div className="absolute top-0 right-0 w-16 h-16 sm:w-20 sm:h-20 opacity-10">
-          <svg viewBox="0 0 24 24" className="w-full h-full fill-blue-500">
+          <svg viewBox="0 0 24 24" className="w-full h-full fill-brand-orange">
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
           </svg>
         </div>
         
         <div className="relative z-10">
-          <div className="text-blue-500 mb-4">
+          <div className="text-brand-orange mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 opacity-70" viewBox="0 0 24 24" fill="currentColor">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
             </svg>
@@ -119,7 +119,7 @@ export default function TestimonialCard({ quote, client, image, keywords }: Test
           {/* <div className="mt-6 flex items-center justify-end">
             <div className="flex items-center space-x-2">
               <div className="h-0.5 w-8 bg-blue-300"></div>
-              <span className="text-sm font-medium text-blue-600">Success Story</span>
+              <span className="text-sm font-medium text-brand-deep">Success Story</span>
             </div>
           </div> */}
         </div>

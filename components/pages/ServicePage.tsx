@@ -317,7 +317,7 @@ export default function ServicesPage() {
       {/* 
         SECTION: PAGE HERO
       */}
-      <section className="relative min-h-screen bg-linear-to-br from-slate-900 via-blue-900 to-indigo-900 text-white flex justify-center items-center overflow-hidden">
+      <section className="relative min-h-screen bg-brand-deep text-white flex justify-center items-center overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
@@ -343,7 +343,7 @@ export default function ServicesPage() {
           >
             {/* Badge */}
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-6 py-2 mb-6"
+              className="inline-flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 mb-6"
               variants={itemVariants}
             >
               <FiZap className="text-sky-400 mr-2" />
@@ -401,7 +401,7 @@ export default function ServicesPage() {
 
             {/* CTA Button */}
             <motion.button
-              className="group relative bg-linear-to-r from-sky-500 to-blue-600 text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-sky-500/25"
+              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -411,7 +411,7 @@ export default function ServicesPage() {
                 Explore Our Solutions
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.button>
           </motion.div>
         </div>
@@ -442,7 +442,7 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <motion.div className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-2 mb-6">
+            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
               <FiLayers className="mr-2" style={{ color: "#10064C" }} />
               <span className="text-sm font-medium" style={{ color: "#10064C" }}>
                 Our Approach
@@ -511,13 +511,13 @@ export default function ServicesPage() {
             </div>
 
             {/* Our Approach */}
-            <div className="bg-linear-to-br from-[#10064C] to-[#1e3a8a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg text-white relative overflow-hidden">
+            <div className="bg-linear-to-br from-[#10064C] to-brand-deep rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg text-white relative overflow-hidden">
               <div className="absolute inset-0 bg-[linear-gradient(rgba(147,197,253,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(147,197,253,0.03)_1px,transparent_1px)] bg-size-[2rem_2rem]" />
-              <div className="absolute top-0 right-0 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl" />
+              <div className="absolute top-0 right-0 w-48 h-48 bg-brand-blue/10 rounded-full blur-3xl" />
 
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-500 rounded-xl flex items-center justify-center">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-blue rounded-xl flex items-center justify-center">
                     <FiCheck className="text-white text-lg sm:text-xl" />
                   </div>
                   <h3 className="text-xl sm:text-2xl font-black">
@@ -605,7 +605,7 @@ export default function ServicesPage() {
                       <div className="w-12 h-12 sm:w-14 sm:h-14 bg-linear-to-br from-[#10064C] to-[#3B82F6] rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 shadow-lg">
                         <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                       </div>
-                      <span className="text-xs font-bold text-blue-500 mb-2">
+                      <span className="text-xs font-bold text-brand-deep mb-2">
                         STEP {item.step}
                       </span>
                       <h4 className="text-lg sm:text-xl font-bold text-slate-800 mb-2">
@@ -648,7 +648,7 @@ export default function ServicesPage() {
                 return (
                   <motion.div
                     key={item.label}
-                    className="bg-linear-to-br from-[#10064C] to-[#1e3a8a] rounded-2xl p-5 sm:p-6 text-white text-center shadow-lg relative overflow-hidden"
+                    className="bg-linear-to-br from-[#10064C] to-brand-deep rounded-2xl p-5 sm:p-6 text-white text-center shadow-lg relative overflow-hidden"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -656,7 +656,7 @@ export default function ServicesPage() {
                   >
                     <div className="absolute inset-0 bg-[linear-gradient(rgba(147,197,253,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(147,197,253,0.05)_1px,transparent_1px)] bg-size-[1rem_1rem]" />
                     <div className="relative z-10">
-                      <div className="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-3">
+                      <div className="w-10 h-10 bg-brand-blue/20 rounded-xl flex items-center justify-center mx-auto mb-3">
                         <Icon className="w-5 h-5 text-blue-300" />
                       </div>
                       <p className="text-sm sm:text-base font-semibold">
@@ -692,7 +692,7 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-2 mb-6">
+            <div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
               <FiZap className="mr-2 text-base" style={{ color: "#10064C" }} />
               <span
                 className="text-base font-medium"
@@ -750,20 +750,20 @@ export default function ServicesPage() {
           >
             {/* Enhanced badge */}
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-3 mb-8"
+              className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-3 mb-8"
             >
-              <FiUsers className="mr-2 text-blue-600" />
-              <span className="text-sm font-medium text-blue-700">
+              <FiUsers className="mr-2 text-brand-deep" />
+              <span className="text-sm font-medium text-brand-deep">
                 Trusted Partnership Network
               </span>
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-slate-800 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
                 Trusted By
               </span>
               <br />
-              <span className="bg-linear-to-r from-slate-800 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
                 Industry Leaders
               </span>
             </h2>
@@ -787,7 +787,7 @@ export default function ServicesPage() {
           >
             <div className="text-center mb-12">
               <h3 className="text-3xl sm:text-5xl font-black">
-                <span className="bg-linear-to-r from-slate-800 to-blue-600 bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
                   What Our Clients Say
                 </span>
               </h3>
@@ -902,7 +902,7 @@ export default function ServicesPage() {
                       <div
                         className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${
                           formData.stage === option
-                            ? "border-blue-500 bg-blue-500"
+                            ? "border-blue-500 bg-brand-blue"
                             : "border-gray-300 group-hover:border-gray-400"
                         }`}
                       >
@@ -940,7 +940,7 @@ export default function ServicesPage() {
                       <div
                         className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${
                           formData.budget === option
-                            ? "border-blue-500 bg-blue-500"
+                            ? "border-blue-500 bg-brand-blue"
                             : "border-gray-300 group-hover:border-gray-400"
                         }`}
                       >
@@ -978,7 +978,7 @@ export default function ServicesPage() {
                       <div
                         className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 ${
                           formData.requirements.includes(option)
-                            ? "border-blue-500 bg-blue-500"
+                            ? "border-blue-500 bg-brand-blue"
                             : "border-gray-300 group-hover:border-gray-400"
                         }`}
                       >
@@ -1019,7 +1019,7 @@ export default function ServicesPage() {
                 <div
                   className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${
                     formData.subscribe
-                      ? "border-blue-500 bg-blue-500"
+                      ? "border-blue-500 bg-brand-blue"
                       : "border-gray-300 group-hover:border-gray-400"
                   }`}
                 >
@@ -1043,7 +1043,7 @@ export default function ServicesPage() {
                 <div
                   className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${
                     formData.consent
-                      ? "border-blue-500 bg-blue-500"
+                      ? "border-blue-500 bg-brand-blue"
                       : "border-gray-300 group-hover:border-gray-400"
                   }`}
                 >
@@ -1061,11 +1061,11 @@ export default function ServicesPage() {
                 />
                 <span className="text-sm text-gray-600">
                   I consent to the{" "}
-                  <a href="/privacy" className="text-blue-600 underline hover:text-blue-800">
+                  <a href="/privacy" className="text-brand-deep underline hover:text-brand-deep">
                     Privacy Policy
                   </a>{" "}
                   and{" "}
-                  <a href="/terms" className="text-blue-600 underline hover:text-blue-800">
+                  <a href="/terms" className="text-brand-deep underline hover:text-brand-deep">
                     Terms & Conditions
                   </a>
                   . *
@@ -1118,7 +1118,7 @@ export default function ServicesPage() {
                   )}
                 </span>
                 {!isSubmitting && (
-                  <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-linear-to-r bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity" />
                 )}
               </motion.button>
 

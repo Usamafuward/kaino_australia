@@ -157,7 +157,7 @@ export default function MarketingBrandPage() {
   return (
     <main className="overflow-hidden">
       {/* SECTION 1: HERO */}
-      <section className="relative min-h-[60vh] bg-linear-to-br from-slate-900 via-blue-900 to-indigo-900 text-white flex justify-center items-center overflow-hidden pt-24 pb-16">
+      <section className="relative min-h-[80vh] bg-linear-to-br from-brand-deep to-brand-blue text-white flex justify-center items-center overflow-hidden pt-24 pb-16">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
           <div
@@ -175,7 +175,7 @@ export default function MarketingBrandPage() {
             animate="visible"
           >
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-6 py-2 mb-6"
+              className="inline-flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 mb-6"
               variants={itemVariants}
             >
               <FiTrendingUp className="text-sky-400 mr-2" />
@@ -421,7 +421,7 @@ export default function MarketingBrandPage() {
                 <div className="space-y-3">
                   {stageOptions.map((option) => (
                     <label key={option} className="flex items-center gap-3 cursor-pointer group">
-                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${formData.stage === option ? "border-blue-500 bg-blue-500" : "border-gray-300 group-hover:border-gray-400"}`}>
+                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${formData.stage === option ? "border-blue-500 bg-brand-blue" : "border-gray-300 group-hover:border-gray-400"}`}>
                         {formData.stage === option && <div className="w-2 h-2 bg-white rounded-full" />}
                       </div>
                       <input type="radio" name="stage" value={option} checked={formData.stage === option} onChange={handleInputChange} className="hidden" />
@@ -438,7 +438,7 @@ export default function MarketingBrandPage() {
                 <div className="space-y-3">
                   {budgetOptions.map((option) => (
                     <label key={option} className="flex items-center gap-3 cursor-pointer group">
-                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${formData.budget === option ? "border-blue-500 bg-blue-500" : "border-gray-300 group-hover:border-gray-400"}`}>
+                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${formData.budget === option ? "border-blue-500 bg-brand-blue" : "border-gray-300 group-hover:border-gray-400"}`}>
                         {formData.budget === option && <div className="w-2 h-2 bg-white rounded-full" />}
                       </div>
                       <input type="radio" name="budget" value={option} checked={formData.budget === option} onChange={handleInputChange} className="hidden" />
@@ -455,7 +455,7 @@ export default function MarketingBrandPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {requirementOptions.map((option) => (
                     <label key={option} className="flex items-center gap-3 cursor-pointer group">
-                      <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 ${formData.requirements.includes(option) ? "border-blue-500 bg-blue-500" : "border-gray-300 group-hover:border-gray-400"}`}>
+                      <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 ${formData.requirements.includes(option) ? "border-blue-500 bg-brand-blue" : "border-gray-300 group-hover:border-gray-400"}`}>
                         {formData.requirements.includes(option) && <FiCheck className="w-3 h-3 text-white" />}
                       </div>
                       <input type="checkbox" checked={formData.requirements.includes(option)} onChange={() => toggleRequirement(option)} className="hidden" />
@@ -479,7 +479,7 @@ export default function MarketingBrandPage() {
 
             <div className="space-y-4 pt-2">
               <label className="flex items-start gap-3 cursor-pointer group">
-                <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${formData.subscribe ? "border-blue-500 bg-blue-500" : "border-gray-300 group-hover:border-gray-400"}`}>
+                <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${formData.subscribe ? "border-blue-500 bg-brand-blue" : "border-gray-300 group-hover:border-gray-400"}`}>
                   {formData.subscribe && <FiCheck className="w-3 h-3 text-white" />}
                 </div>
                 <input type="checkbox" name="subscribe" checked={formData.subscribe} onChange={handleCheckboxChange} className="hidden" />
@@ -487,11 +487,11 @@ export default function MarketingBrandPage() {
               </label>
 
               <label className="flex items-start gap-3 cursor-pointer group">
-                <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${formData.consent ? "border-blue-500 bg-blue-500" : "border-gray-300 group-hover:border-gray-400"}`}>
+                <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${formData.consent ? "border-blue-500 bg-brand-blue" : "border-gray-300 group-hover:border-gray-400"}`}>
                   {formData.consent && <FiCheck className="w-3 h-3 text-white" />}
                 </div>
                 <input type="checkbox" name="consent" checked={formData.consent} onChange={handleCheckboxChange} className="hidden" required />
-                <span className="text-sm text-gray-600">I consent to the <a href="/privacy" className="text-blue-600 underline hover:text-blue-800">Privacy Policy</a> and <a href="/terms" className="text-blue-600 underline hover:text-blue-800">Terms & Conditions</a>. *</span>
+                <span className="text-sm text-gray-600">I consent to the <a href="/privacy" className="text-brand-deep underline hover:text-brand-deep">Privacy Policy</a> and <a href="/terms" className="text-brand-deep underline hover:text-brand-deep">Terms & Conditions</a>. *</span>
               </label>
             </div>
 

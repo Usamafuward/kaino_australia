@@ -10,8 +10,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: "bg-[#FF8600] text-white hover:opacity-90 focus:ring-[#FF8600]",
-        secondary: "bg-transparent border border-white text-white hover:bg-white hover:text-[#001f5c]",
-        outline: "bg-transparent border border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white",
+        secondary: "bg-transparent border border-white text-white hover:bg-white hover:text-[#27187E]",
+        outline: "bg-transparent border border-[#27187E] text-[#27187E] hover:bg-[#27187E] hover:text-white",
       },
       size: {
         default: "h-10 py-2 px-4",

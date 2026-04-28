@@ -136,7 +136,7 @@ export default function Header() {
                 <span className="relative">
                   VATION
                   <motion.div
-                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-linear-to-r from-blue-400 to-indigo-400 origin-left"
+                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-linear-to-r from-brand-blue to-brand-deep origin-left"
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -283,7 +283,7 @@ export default function Header() {
                     {link.name}
                     {isActive && !link.submenu && (
                       <motion.div
-                        className="w-full h-1 mt-1 bg-linear-to-r from-blue-400 to-indigo-400"
+                        className="w-full h-1 mt-1 bg-linear-to-r from-brand-blue to-brand-deep"
                         layoutId="mobileActiveIndicator"
                         initial={{ scaleX: 0 }}
                         animate={{ scaleX: 1 }}

@@ -121,7 +121,7 @@ export default function BlogPostPage() {
           </p>
           <button
             onClick={onBack}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors flex items-center mx-auto"
+            className="bg-brand-blue hover:bg-brand-deep text-white font-bold py-3 px-6 rounded-full transition-colors flex items-center mx-auto"
           >
             <FiArrowLeft className="mr-2" />
             Back to Insight
@@ -210,12 +210,12 @@ export default function BlogPostPage() {
                 className="prose prose-lg lg:prose-xl max-w-none 
                           prose-headings:font-bold prose-headings:text-slate-900
                           prose-p:text-slate-700 prose-p:leading-relaxed
-                          prose-a:text-blue-600 prose-a:font-medium prose-a:transition-colors hover:prose-a:text-blue-800
+                          prose-a:text-brand-deep prose-a:font-medium prose-a:transition-colors hover:prose-a:text-brand-deep
                           prose-img:rounded-xl prose-img:shadow-md
                           prose-blockquote:border-l-4 prose-blockquote:border-blue-500
                           prose-blockquote:bg-blue-50 prose-blockquote:p-4 prose-blockquote:font-medium prose-blockquote:text-slate-600 prose-blockquote:not-italic
-                          prose-ul:list-disc prose-li:my-2 prose-li:marker:text-blue-500
-                          prose-ol:list-decimal prose-ol:marker:text-blue-500
+                          prose-ul:list-disc prose-li:my-2 prose-li:marker:text-brand-deep
+                          prose-ol:list-decimal prose-ol:marker:text-brand-deep
                           prose-strong:text-slate-800
                           prose-code:bg-slate-100 prose-code:p-1 prose-code:rounded prose-code:font-mono prose-code:text-sm prose-code:text-purple-700"
                 dangerouslySetInnerHTML={{ __html: post.content }}
@@ -237,7 +237,7 @@ export default function BlogPostPage() {
                   {post.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="inline-flex items-center bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                      className="inline-flex items-center bg-blue-100 text-brand-deep text-sm font-medium px-3 py-1 rounded-full"
                     >
                       #{tag}
                     </span>

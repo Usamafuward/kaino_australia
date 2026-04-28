@@ -338,13 +338,13 @@ export default function CTAWithSchedulePopup() {
 
       {/* Original CTA Section */}
       <section
-        className="relative min-h-screen py-12 sm:py-16 md:py-22 bg-linear-to-br from-slate-900 via-blue-900 to-indigo-900 overflow-hidden flex items-center justify-center"
+        className="relative min-h-screen py-12 sm:py-16 md:py-22 bg-brand-deep overflow-hidden flex items-center justify-center"
         id="cta"
       >
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-blue-400/10 rounded-full blur-xl sm:blur-2xl md:blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-indigo-500/10 rounded-full blur-xl sm:blur-2xl md:blur-3xl animate-pulse delay-1000" />
+          <div className="absolute bottom-1/4 right-1/4 w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-brand-blue/10 rounded-full blur-xl sm:blur-2xl md:blur-3xl animate-pulse delay-1000" />
           <div className="absolute top-1/2 left-1/2 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 bg-sky-500/10 rounded-full blur-xl sm:blur-2xl md:blur-3xl animate-pulse delay-2000" />
         </div>
 
@@ -355,7 +355,7 @@ export default function CTAWithSchedulePopup() {
           <div className="max-w-4xl mx-auto text-center">
             {/* Badge */}
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-sm border border-blue-500/30 rounded-full px-4 py-1.5 sm:px-5 sm:py-2 md:px-6 md:py-2 mb-6 sm:mb-8"
+              className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1.5 sm:px-5 sm:py-2 md:px-6 md:py-2 mb-6 sm:mb-8"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -464,7 +464,7 @@ export default function CTAWithSchedulePopup() {
 
         {/* Floating Elements */}
         <motion.div
-          className="absolute top-1/4 left-4 sm:left-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-blue-500/20 rounded-full blur-sm"
+          className="absolute top-1/4 left-4 sm:left-6 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-brand-blue/20 rounded-full blur-sm"
           animate={{
             y: [-5, 5, -5],
             x: [-3, 3, -3],
@@ -477,7 +477,7 @@ export default function CTAWithSchedulePopup() {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 right-4 sm:right-6 w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-indigo-500/20 rounded-full blur-sm"
+          className="absolute bottom-1/4 right-4 sm:right-6 w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-brand-blue/20 rounded-full blur-sm"
           animate={{
             y: [5, -5, 5],
             x: [3, -3, 3],
@@ -588,7 +588,7 @@ export default function CTAWithSchedulePopup() {
                             ${
                               day.isCurrentMonth
                                 ? day.isSelectable
-                                  ? "text-gray-900 hover:bg-blue-50 hover:text-blue-600 border border-transparent hover:border-blue-200"
+                                  ? "text-gray-900 hover:bg-blue-50 hover:text-brand-deep border border-transparent hover:border-blue-200"
                                   : day.isPast
                                   ? "text-gray-300 cursor-not-allowed"
                                   : "text-gray-400 cursor-not-allowed"
@@ -596,13 +596,13 @@ export default function CTAWithSchedulePopup() {
                             }
                             ${
                               day.isToday
-                                ? "bg-blue-600 text-white font-semibold"
+                                ? "bg-brand-blue text-white font-semibold"
                                 : ""
                             }
                             ${
                               selectedDate?.toDateString() ===
                               day.date.toDateString()
-                                ? "bg-blue-600 text-white"
+                                ? "bg-brand-blue text-white"
                                 : ""
                             }
                         `}
@@ -648,7 +648,7 @@ export default function CTAWithSchedulePopup() {
                           p-3 border rounded-lg text-sm font-medium transition-all
                           ${
                             selectedTime === time
-                              ? "border-blue-600 bg-blue-600 text-white"
+                              ? "border-blue-600 bg-brand-blue text-white"
                               : "border-gray-200 text-gray-700 hover:border-blue-300 hover:bg-blue-50"
                           }
                         `}
@@ -680,7 +680,7 @@ export default function CTAWithSchedulePopup() {
                   {/* Selected appointment summary */}
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
                     <div className="flex items-center gap-3 text-gray-700 text-sm mb-2">
-                      <FiCalendar className="text-blue-600" />
+                      <FiCalendar className="text-brand-deep" />
                       <span className="font-medium">
                         {selectedDate?.toLocaleDateString("en-US", {
                           weekday: "long",
@@ -691,7 +691,7 @@ export default function CTAWithSchedulePopup() {
                       </span>
                     </div>
                     <div className="flex items-center gap-3 text-gray-700 text-sm">
-                      <FiClock className="text-blue-600" />
+                      <FiClock className="text-brand-deep" />
                       <span className="font-medium">{selectedTime}</span>
                     </div>
                   </div>
@@ -766,7 +766,7 @@ export default function CTAWithSchedulePopup() {
                     className={`w-full font-semibold py-3 rounded-lg transition-colors ${
                       isSubmitting
                         ? "bg-gray-400 text-gray-600 cursor-not-allowed"
-                        : "bg-blue-600 text-white hover:bg-blue-700"
+                        : "bg-brand-blue text-white hover:bg-brand-deep"
                     }`}
                   >
                     {isSubmitting ? (
@@ -799,7 +799,7 @@ export default function CTAWithSchedulePopup() {
                 ) : (
                   <button
                     onClick={() => setStep(step + 1)}
-                    className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                    className="w-full bg-brand-blue text-white font-semibold py-3 rounded-lg hover:bg-brand-deep transition-colors"
                   >
                     Next
                   </button>
@@ -809,11 +809,11 @@ export default function CTAWithSchedulePopup() {
             <div className="bg-gray-50 p-4 border-t border-gray-100 text-center text-xs text-gray-500">
               <p>
                 By scheduling, you agree to our{" "}
-                <a href="#" className="text-blue-600 hover:underline">
+                <a href="#" className="text-brand-deep hover:underline">
                   Terms of Service
                 </a>{" "}
                 and{" "}
-                <a href="#" className="text-blue-600 hover:underline">
+                <a href="#" className="text-brand-deep hover:underline">
                   Privacy Policy
                 </a>
                 .

@@ -108,7 +108,7 @@ export default function Process() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
+            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
             style={{ backgroundColor: "rgba(147, 197, 253, 0.1)" }}
           >
             <FiCompass
@@ -160,7 +160,7 @@ export default function Process() {
                 index === activeIndex
                   ? "text-white shadow-lg"
                   : index < activeIndex
-                  ? "bg-blue-100 text-blue-600 border border-blue-200"
+                  ? "bg-blue-100 text-brand-deep border border-blue-200"
                   : "bg-white/60 text-gray-400 border border-white/50"
               }`}
               whileHover={{ scale: 1.1 }}
@@ -168,7 +168,7 @@ export default function Process() {
             >
               {index === activeIndex && (
                 <motion.div
-                  className="absolute inset-0 bg-linear-to-br from-blue-500 to-indigo-600 rounded-full"
+                  className="absolute inset-0 bg-linear-to-br from-brand-blue to-brand-deep rounded-full"
                   layoutId="activeStep"
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 />
@@ -214,7 +214,7 @@ export default function Process() {
               >
                 {/* Icon */}
                 <div className="shrink-0">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-linear-to-br from-blue-500 to-indigo-600 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-lg sm:shadow-xl">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-linear-to-br from-brand-blue to-brand-deep rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-lg sm:shadow-xl">
                     <activeStep.icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" />
                   </div>
                 </div>
@@ -222,7 +222,7 @@ export default function Process() {
                 {/* Content */}
                 <div className="text-center md:text-left flex-1">
                   <div className="flex items-center justify-center md:justify-start gap-3 mb-3 sm:mb-4">
-                    <span className="text-xs sm:text-sm font-semibold text-blue-500 bg-blue-50 px-3 py-1 rounded-full">
+                    <span className="text-xs sm:text-sm font-semibold text-brand-deep bg-blue-50 px-3 py-1 rounded-full">
                       Step {activeStep.number} of {processSteps.length}
                     </span>
                   </div>

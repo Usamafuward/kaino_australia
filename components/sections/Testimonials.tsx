@@ -67,7 +67,7 @@ export default function Blog() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
+            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
             style={{ backgroundColor: "rgba(147, 197, 253, 0.1)" }}
           >
             <FiHeart
@@ -114,7 +114,7 @@ export default function Blog() {
                   }}
                 >
                   <div className="flex flex-col lg:flex-row items-center space-y-2 lg:space-y-0 mr-4 sm:mr-10">
-                    <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-linear-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl sm:text-3xl shadow-lg border border-gray-200/50">
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-linear-to-br from-brand-blue to-brand-deep rounded-xl flex items-center justify-center text-white font-bold text-2xl sm:text-3xl shadow-lg border border-gray-200/50">
                       {testimonials[currentIndex].author.charAt(0)}
                     </div>
                     <div className="flex space-x-0.5 sm:space-x-1 lg:hidden mt-2">
@@ -149,7 +149,7 @@ export default function Blog() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: i * 0.1 + 0.2 }}
                       >
-                        <FiStar className="text-yellow-500 text-base sm:text-lg fill-current" />
+                        <FiStar className="text-brand-orange text-base sm:text-lg fill-current" />
                       </motion.div>
                     ))}
                   </div>
@@ -165,13 +165,13 @@ export default function Blog() {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="absolute top-0 right-0 w-24 h-24 sm:w-32 sm:h-32 opacity-10">
-                    <svg viewBox="0 0 24 24" className="w-full h-full fill-blue-500">
+                    <svg viewBox="0 0 24 24" className="w-full h-full fill-brand-orange">
                       <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                     </svg>
                   </div>
                   
                   <div className="relative z-10 flex flex-col items-center lg:items-start">
-                    <div className="text-blue-500 mb-6">
+                    <div className="text-brand-orange mb-6">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 sm:h-10 sm:w-10 opacity-70" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                       </svg>
@@ -190,7 +190,7 @@ export default function Blog() {
           <div className="flex justify-center items-center gap-4 pt-6">
             <button
               onClick={handlePrevious}
-              className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-colors shadow-sm"
+              className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-blue-50 hover:text-brand-deep hover:border-blue-200 transition-colors shadow-sm"
               aria-label="Previous testimonial"
             >
               <FiChevronLeft size={24} />
@@ -201,7 +201,7 @@ export default function Blog() {
                 <button
                   key={idx}
                   onClick={() => setCurrentIndex(idx)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${idx === currentIndex ? "bg-blue-600 w-8" : "bg-gray-300 hover:bg-gray-400"
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${idx === currentIndex ? "bg-brand-blue w-8" : "bg-gray-300 hover:bg-gray-400"
                     }`}
                   aria-label={`Go to testimonial ${idx + 1}`}
                 />
@@ -210,7 +210,7 @@ export default function Blog() {
 
             <button
               onClick={handleNext}
-              className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-colors shadow-sm"
+              className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-blue-50 hover:text-brand-deep hover:border-blue-200 transition-colors shadow-sm"
               aria-label="Next testimonial"
             >
               <FiChevronRight size={24} />

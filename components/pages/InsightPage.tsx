@@ -326,7 +326,7 @@ export default function BlogPage() {
   return (
     <main className="overflow-hidden">
       {/* Hero Section - Always visible */}
-      <section className="relative min-h-screen bg-linear-to-br from-slate-900 via-blue-900 to-indigo-900 text-white flex justify-center items-center overflow-hidden">
+      <section className="relative min-h-screen bg-brand-deep text-white flex justify-center items-center overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
           <div
@@ -348,7 +348,7 @@ export default function BlogPage() {
             animate="visible"
           >
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-6 py-2 mb-6"
+              className="inline-flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 mb-6"
               variants={itemVariants}
             >
               <FiBookOpen className="text-sky-400 mr-2" />
@@ -397,7 +397,7 @@ export default function BlogPage() {
               </div>
             </motion.div>
             <motion.button
-              className="group relative bg-linear-to-r from-sky-500 to-blue-600 text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-sky-500/25"
+              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -411,7 +411,7 @@ export default function BlogPage() {
                 Start Reading
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.button>
           </motion.div>
         </div>
@@ -435,7 +435,7 @@ export default function BlogPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-2 mb-6">
+            <div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
               <FiZap className="mr-2 text-base" style={{ color: "#10064C" }} />
               <span
                 className="text-base font-medium"
@@ -445,7 +445,7 @@ export default function BlogPage() {
               </span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-slate-800 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
                 Latest Insights &
               </span>
               <br />
@@ -509,7 +509,7 @@ export default function BlogPage() {
                 <p className="text-gray-600 mb-6">{error}</p>
                 <button
                   onClick={() => window.location.reload()}
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors"
+                  className="bg-brand-blue hover:bg-brand-deep text-white font-bold py-3 px-6 rounded-full transition-colors"
                 >
                   Retry
                 </button>
@@ -577,7 +577,7 @@ export default function BlogPage() {
 
                       {/* Title */}
                       <h3
-                        className="text-xl font-bold text-gray-800 line-clamp-2 group-hover:text-blue-600 transition-colors mb-3"
+                        className="text-xl font-bold text-gray-800 line-clamp-2 group-hover:text-brand-deep transition-colors mb-3"
                         dangerouslySetInnerHTML={{ __html: post.title }}
                       />
 
@@ -591,7 +591,7 @@ export default function BlogPage() {
                       <div className="pt-4 border-t border-gray-200/80 mt-auto">
                         <motion.button
                           onClick={() => handleBlogClick(post)}
-                          className="group/link inline-flex items-center font-semibold text-blue-600 hover:text-blue-800 transition-colors text-sm"
+                          className="group/link inline-flex items-center font-semibold text-brand-deep hover:text-brand-deep transition-colors text-sm"
                           whileHover={{ x: 3 }}
                         >
                           Read Full Article
@@ -652,7 +652,7 @@ export default function BlogPage() {
                           disabled={isAnimating}
                           className={`flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium transition-all ${
                             currentPage === pageNum
-                              ? "bg-blue-600 text-white scale-110"
+                              ? "bg-brand-blue text-white scale-110"
                               : isAnimating
                               ? "text-gray-400 cursor-not-allowed"
                               : "text-gray-700 hover:bg-gray-100 hover:scale-105"

@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
   return (
     <main className="overflow-hidden">
       {/* SECTION: PAGE HERO */}
-      <section className="relative min-h-screen bg-linear-to-br from-slate-900 via-blue-900 to-indigo-900 text-white flex justify-center items-center overflow-hidden">
+      <section className="relative min-h-screen bg-brand-deep text-white flex justify-center items-center overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
@@ -74,7 +74,7 @@ export default function PrivacyPolicyPage() {
           >
             {/* Badge */}
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-6 py-2 mb-6"
+              className="inline-flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 mb-6"
               variants={itemVariants}
             >
               <FiShield className="text-sky-400 mr-2" />
@@ -123,7 +123,7 @@ export default function PrivacyPolicyPage() {
 
             {/* CTA Button */}
             <motion.button
-              className="group relative bg-linear-to-r from-sky-500 to-blue-600 text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-sky-500/25"
+              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -137,7 +137,7 @@ export default function PrivacyPolicyPage() {
                 Read Our Policy
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.button>
           </motion.div>
         </div>
@@ -167,10 +167,10 @@ export default function PrivacyPolicyPage() {
           >
             {/* Badge */}
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-2 mb-6"
+              className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6"
             >
-              <FiInfo className="mr-2 text-blue-600" />
-              <span className="text-sm font-medium text-blue-700">
+              <FiInfo className="mr-2 text-brand-deep" />
+              <span className="text-sm font-medium text-brand-deep">
                 Policy Overview
               </span>
             </motion.div>
@@ -179,7 +179,7 @@ export default function PrivacyPolicyPage() {
               className="text-4xl sm:text-5xl md:text-6xl font-black mb-6"
               variants={itemVariants}
             >
-              <span className="bg-linear-to-r from-slate-800 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
                 What This Policy Covers
               </span>
             </motion.h2>
@@ -229,7 +229,7 @@ export default function PrivacyPolicyPage() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <div className="flex items-center mb-4">
-                  <div className="p-3 bg-[#FF8600] hover:bg-[#FF8600]/90 text-white rounded-xl group-hover:scale-110 transition-transform duration-300">
+                  <div className="p-3 bg-brand-orange hover:bg-brand-orange/90 text-white rounded-xl group-hover:scale-110 transition-transform duration-300">
                     <item.icon size={20} />
                   </div>
                   <h3 className="text-lg font-bold text-slate-800 ml-4">
@@ -253,7 +253,7 @@ export default function PrivacyPolicyPage() {
               At Kainovation Technologies, accessible from{" "}
               <a
                 href="https://kainovation.com/"
-                className="text-blue-600 hover:underline font-medium"
+                className="text-brand-deep hover:underline font-medium"
               >
                 https://kainovation.com/
               </a>
@@ -282,7 +282,7 @@ export default function PrivacyPolicyPage() {
               variants={sectionVariants}
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-linear-to-r from-blue-500 to-blue-600 text-white rounded-xl mr-4">
+                <div className="p-3 bg-linear-to-r from-brand-blue to-brand-deep text-white rounded-xl mr-4">
                   <FiDatabase size={24} />
                 </div>
                 <h2 className="text-3xl font-bold text-slate-800">
@@ -319,7 +319,7 @@ export default function PrivacyPolicyPage() {
               variants={sectionVariants}
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-linear-to-r from-blue-500 to-blue-600 text-white rounded-xl mr-4">
+                <div className="p-3 bg-linear-to-r from-brand-blue to-brand-deep text-white rounded-xl mr-4">
                   <FiMail size={24} />
                 </div>
                 <h2 className="text-3xl font-bold text-slate-800">
@@ -345,7 +345,7 @@ export default function PrivacyPolicyPage() {
               variants={sectionVariants}
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-linear-to-r from-blue-500 to-blue-600 text-white rounded-xl mr-4">
+                <div className="p-3 bg-linear-to-r from-brand-blue to-brand-deep text-white rounded-xl mr-4">
                   <FiEye size={24} />
                 </div>
                 <h2 className="text-3xl font-bold text-slate-800">
@@ -356,7 +356,7 @@ export default function PrivacyPolicyPage() {
               <div className="space-y-6">
                 <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
                   <h3 className="text-xl font-semibold text-slate-800 mb-3 flex items-center">
-                    <FiCheck className="text-blue-600 mr-2" />
+                    <FiCheck className="text-brand-deep mr-2" />
                     Log Files
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -370,7 +370,7 @@ export default function PrivacyPolicyPage() {
 
                 <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
                   <h3 className="text-xl font-semibold text-slate-800 mb-3 flex items-center">
-                    <FiCheck className="text-blue-600 mr-2" />
+                    <FiCheck className="text-brand-deep mr-2" />
                     Analytics
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -385,7 +385,7 @@ export default function PrivacyPolicyPage() {
 
                 <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
                   <h3 className="text-xl font-semibold text-slate-800 mb-3 flex items-center">
-                    <FiCheck className="text-blue-600 mr-2" />
+                    <FiCheck className="text-brand-deep mr-2" />
                     Cookies
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -410,7 +410,7 @@ export default function PrivacyPolicyPage() {
               variants={sectionVariants}
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-linear-to-r from-blue-500 to-blue-600 text-white rounded-xl mr-4">
+                <div className="p-3 bg-linear-to-r from-brand-blue to-brand-deep text-white rounded-xl mr-4">
                   <FiShield size={24} />
                 </div>
                 <h2 className="text-3xl font-bold text-slate-800">
@@ -441,7 +441,7 @@ export default function PrivacyPolicyPage() {
                     key={index}
                     className="flex items-start bg-white rounded-lg p-4 border border-blue-200"
                   >
-                    <FiCheck className="text-blue-600 mr-3 mt-1 shrink-0" />
+                    <FiCheck className="text-brand-deep mr-3 mt-1 shrink-0" />
                     <span className="text-gray-700">{item}</span>
                   </div>
                 ))}
@@ -457,7 +457,7 @@ export default function PrivacyPolicyPage() {
               variants={sectionVariants}
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-linear-to-r from-blue-500 to-blue-600 text-white rounded-xl mr-4">
+                <div className="p-3 bg-linear-to-r from-brand-blue to-brand-deep text-white rounded-xl mr-4">
                   <FiUsers size={24} />
                 </div>
                 <h2 className="text-3xl font-bold text-slate-800">
@@ -490,7 +490,7 @@ export default function PrivacyPolicyPage() {
               viewport={{ once: true }}
               variants={sectionVariants}
             >
-              <div className="bg-linear-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white text-center">
+              <div className="bg-linear-to-r from-brand-blue to-brand-deep rounded-2xl p-8 text-white text-center">
                 <div className="flex justify-center mb-4">
                   <div className="p-4 bg-white/20 rounded-xl">
                     <FiMail size={32} />
@@ -510,7 +510,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 {/* <motion.a
                   href="mailto:hello@kainovation.com"
-                  className="inline-flex items-center bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors"
+                  className="inline-flex items-center bg-white text-brand-deep font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
