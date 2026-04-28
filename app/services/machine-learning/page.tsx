@@ -198,7 +198,7 @@ export default function AIMachineLearningPage() {
               Harness intelligent systems to optimise business processes, predict trends, and automate smarter decisions across marketing, operations, and strategy. Our solutions turn data into actionable insights that drive growth, efficiency, and measurable results.
             </motion.p>
             <motion.button
-              className="group relative bg-linear-to-r from-orange-500 to-red-600 text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl"
+              className="group relative bg-[#FF8600] hover:bg-[#FF8600]/90 text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -239,7 +239,7 @@ export default function AIMachineLearningPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 0 * 0.1 }}
                   >
-                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-orange-500 to-red-600 flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-linear-to-br bg-[#FF8600] flex items-center justify-center shrink-0">
                       <FiCheck className="text-white" />
                     </div>
                     <span className="font-semibold text-slate-700">Predictive Analytics</span>
@@ -252,7 +252,7 @@ export default function AIMachineLearningPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 1 * 0.1 }}
                   >
-                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-orange-500 to-red-600 flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-linear-to-br bg-[#FF8600] flex items-center justify-center shrink-0">
                       <FiCheck className="text-white" />
                     </div>
                     <span className="font-semibold text-slate-700">Neural Networks</span>
@@ -265,7 +265,7 @@ export default function AIMachineLearningPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 2 * 0.1 }}
                   >
-                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-orange-500 to-red-600 flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-linear-to-br bg-[#FF8600] flex items-center justify-center shrink-0">
                       <FiCheck className="text-white" />
                     </div>
                     <span className="font-semibold text-slate-700">Computer Vision</span>
@@ -278,7 +278,7 @@ export default function AIMachineLearningPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 3 * 0.1 }}
                   >
-                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-orange-500 to-red-600 flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-linear-to-br bg-[#FF8600] flex items-center justify-center shrink-0">
                       <FiCheck className="text-white" />
                     </div>
                     <span className="font-semibold text-slate-700">NLP Solutions</span>
@@ -292,7 +292,7 @@ export default function AIMachineLearningPage() {
               viewport={{ once: true }}
               className="relative aspect-square max-w-lg mx-auto w-full"
             >
-              <div className="absolute inset-0 bg-linear-to-br from-orange-500 to-red-600 rounded-3xl transform rotate-3 opacity-20" />
+              <div className="absolute inset-0 bg-linear-to-br bg-[#FF8600] rounded-3xl transform rotate-3 opacity-20" />
               <div className="absolute inset-4 rounded-2xl overflow-hidden border-4 border-white shadow-2xl">
                 <Image
                   src={machine_learning}
@@ -519,7 +519,7 @@ export default function AIMachineLearningPage() {
                     </>
                   )}
                 </span>
-                {!isSubmitting && <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity" />}
+                {!isSubmitting && <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />}
               </motion.button>
 
               {submitStatus === "success" && (

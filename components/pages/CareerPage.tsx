@@ -261,7 +261,7 @@ export default function CareerPage() {
                                 View Open Positions
                                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                             </span>
-                            <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
                         </motion.button>
                     </motion.div>
                 </div>
@@ -412,7 +412,7 @@ export default function CareerPage() {
 
                                                             {/* Apply Button */}
                                                             <motion.button
-                                                                className="group/button w-full bg-linear-to-r from-blue-500 to-indigo-600 text-white font-semibold py-3 px-6 rounded-xl hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-lg shadow-blue-500/25"
+                                                                className="group/button w-full bg-[#FF8600] hover:bg-[#FF8600]/90 text-white font-semibold py-3 px-6 rounded-xl hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-lg shadow-blue-500/25"
                                                                 whileHover={{ scale: 1.02 }}
                                                                 whileTap={{ scale: 0.98 }}
                                                             >
@@ -495,7 +495,7 @@ export default function CareerPage() {
                             </p>
                             <motion.a
                                 href="mailto:talent@kainovation.com"
-                                className="inline-flex items-center bg-linear-to-r from-blue-500 to-indigo-600 text-white font-bold py-4 px-8 rounded-full shadow-lg shadow-blue-500/25 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300"
+                                className="inline-flex items-center bg-[#FF8600] hover:bg-[#FF8600]/90 text-white font-bold py-4 px-8 rounded-full shadow-lg shadow-blue-500/25 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >

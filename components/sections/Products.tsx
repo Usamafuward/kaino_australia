@@ -152,7 +152,7 @@ export default function Products() {
             >
               {/* Status Badge */}
               <motion.div
-                className="absolute -top-2 -right-2 z-20 px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-xs font-bold shadow-md sm:shadow-lg bg-linear-to-r from-blue-500 to-indigo-600 text-white"
+                className="absolute -top-2 -right-2 z-20 px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-xs font-bold shadow-md sm:shadow-lg bg-brand-orange hover:bg-brand-orange/90 text-white"
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{
                   duration: 2,
@@ -303,7 +303,7 @@ export default function Products() {
           transition={{ duration: 0.6 }}
         >
           <motion.button
-            className="group relative text-white font-bold bg-linear-to-r from-blue-500 to-indigo-600 py-3 px-8 sm:py-3.5 sm:px-10 md:py-4 md:px-12 rounded-full overflow-hidden shadow-xl sm:shadow-2xl text-sm sm:text-base md:text-lg"
+            className="group relative text-white font-bold bg-brand-orange hover:bg-brand-orange/90 py-3 px-8 sm:py-3.5 sm:px-10 md:py-4 md:px-12 rounded-full overflow-hidden shadow-xl sm:shadow-2xl text-sm sm:text-base md:text-lg"
             whileHover={{
               scale: 1.02,
               boxShadow: "0px 15px 30px -8px rgba(16, 6, 76, 0.3)",
@@ -317,7 +317,7 @@ export default function Products() {
               </span>
             </Link>
             <motion.div
-              className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute inset-0 bg-linear-to-r bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity"
               layoutId="button-bg"
             />
           </motion.button>

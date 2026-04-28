@@ -137,7 +137,7 @@ export default function PrivacyPolicyPage() {
                 Read Our Policy
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.button>
           </motion.div>
         </div>
@@ -229,7 +229,7 @@ export default function PrivacyPolicyPage() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <div className="flex items-center mb-4">
-                  <div className="p-3 bg-linear-to-r from-blue-500 to-indigo-600 text-white rounded-xl group-hover:scale-110 transition-transform duration-300">
+                  <div className="p-3 bg-[#FF8600] hover:bg-[#FF8600]/90 text-white rounded-xl group-hover:scale-110 transition-transform duration-300">
                     <item.icon size={20} />
                   </div>
                   <h3 className="text-lg font-bold text-slate-800 ml-4">

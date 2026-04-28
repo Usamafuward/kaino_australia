@@ -519,7 +519,7 @@ export default function DataArchitectureEngineeringPage() {
                     </>
                   )}
                 </span>
-                {!isSubmitting && <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity" />}
+                {!isSubmitting && <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />}
               </motion.button>
 
               {submitStatus === "success" && (

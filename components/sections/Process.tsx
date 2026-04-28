@@ -192,7 +192,7 @@ export default function Process() {
             {/* Progress bar */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gray-100">
               <motion.div
-                className="h-full bg-linear-to-r from-blue-500 to-indigo-600"
+                className="h-full bg-[#FF8600] hover:bg-[#FF8600]/90"
                 key={`progress-${activeIndex}-${isPaused}`}
                 initial={{ width: "0%" }}
                 animate={{ width: isPaused ? undefined : "100%" }}

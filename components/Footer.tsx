@@ -279,7 +279,7 @@ export default function Footer() {
                   <motion.button
                     type="submit"
                     disabled={isLoading}
-                    className="w-full text-white font-bold py-2.5 px-4 rounded-lg shadow-md flex items-center justify-center text-sm bg-linear-to-r from-blue-500 to-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full text-white font-bold py-2.5 px-4 rounded-lg shadow-md flex items-center justify-center text-sm bg-[#FF8600] hover:bg-[#FF8600]/90 disabled:opacity-50 disabled:cursor-not-allowed"
                     whileHover={!isLoading ? { scale: 1.02 } : {}}
                     whileTap={!isLoading ? { scale: 0.98 } : {}}
                   >

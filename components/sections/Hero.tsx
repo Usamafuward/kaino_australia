@@ -130,7 +130,7 @@ export default function Hero() {
                 Lets dive in
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.button>
           </motion.div>
 

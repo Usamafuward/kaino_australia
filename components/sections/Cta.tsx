@@ -434,7 +434,7 @@ export default function CTAWithSchedulePopup() {
             >
               <motion.button
                 onClick={() => setShowPopup(true)}
-                className="group relative text-white font-bold bg-linear-to-r from-blue-500 to-indigo-600 py-3 px-6 sm:py-3.5 sm:px-7 md:py-4 md:px-8 rounded-full overflow-hidden shadow-lg sm:shadow-xl min-w-[180px] sm:min-w-[200px] text-sm sm:text-base"
+                className="group relative text-white font-bold bg-[#FF8600] hover:bg-[#FF8600]/90 py-3 px-6 sm:py-3.5 sm:px-7 md:py-4 md:px-8 rounded-full overflow-hidden shadow-lg sm:shadow-xl min-w-[180px] sm:min-w-[200px] text-sm sm:text-base"
                 whileHover={{
                   scale: 1.02,
                 }}

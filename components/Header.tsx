@@ -205,7 +205,7 @@ export default function Header() {
             {/* CTA Button & Mobile Menu */}
             <div className="flex items-center">
               <motion.button
-                className="hidden lg:flex items-center justify-center group relative bg-linear-to-r from-blue-500 to-indigo-600 text-white font-bold py-3 px-6 rounded-full overflow-hidden shadow-lg min-w-[200px]"
+                className="hidden lg:flex items-center justify-center group relative bg-[#FF8600] hover:bg-[#FF8600]/90 text-white font-bold py-3 px-6 rounded-full overflow-hidden shadow-lg min-w-[200px]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 whileHover={{ 
@@ -220,7 +220,7 @@ export default function Header() {
                   <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </span>
                 <motion.div 
-                  className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity"
                   layoutId="cta-bg"
                 />
               </motion.button>
@@ -315,7 +315,7 @@ export default function Header() {
           </div>
           
           <motion.button
-            className="mt-8 text-white font-bold bg-linear-to-r from-blue-500 to-indigo-600 py-4 px-8 rounded-full shadow-lg min-w-[200px]"
+            className="mt-8 text-white font-bold bg-[#FF8600] hover:bg-[#FF8600]/90 py-4 px-8 rounded-full shadow-lg min-w-[200px]"
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

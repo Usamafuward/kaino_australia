@@ -132,7 +132,7 @@ export const servicesData: Service[] = [
     description:
       "Harness intelligent systems to optimise business processes, predict trends, and automate smarter decisions across marketing, operations, and strategy. Our solutions turn data into actionable insights that drive growth, efficiency, and measurable results.",
     icon: FiCpu,
-    gradient: "from-orange-500 to-red-600",
+    gradient: "bg-[#FF8600]",
     features: [
       "Predictive Analytics",
       "Neural Networks",
@@ -411,7 +411,7 @@ export default function ServicesPage() {
                 Explore Our Solutions
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.button>
           </motion.div>
         </div>
@@ -1118,7 +1118,7 @@ export default function ServicesPage() {
                   )}
                 </span>
                 {!isSubmitting && (
-                  <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
                 )}
               </motion.button>
 

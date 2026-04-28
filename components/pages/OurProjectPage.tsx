@@ -293,7 +293,7 @@ export default function ProjectsPage() {
                 Explore Our Projects
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.button>
           </motion.div>
         </div>
@@ -360,7 +360,7 @@ export default function ProjectsPage() {
               >
                 {/* Status Badge */}
                 <motion.div
-                  className={`absolute -top-2 -right-2 z-20 px-3 py-1 rounded-full text-xs font-bold shadow-lg bg-linear-to-r ${project.statusColor} text-white`}
+                  className={`absolute -top-2 -right-2 z-20 px-3 py-1 rounded-full text-xs font-bold shadow-lg bg-brand-orange hover:bg-brand-orange/90 text-white`}
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{
                     duration: 2,
