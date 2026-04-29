@@ -56,7 +56,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "We use Kainovation as a recruiting resource as we prefer that all of our products are developed inhouse. They are able to find strong candidates quickly. We've been happy with the skill level of the people we hired through them. The Kainovation team also takes care of all of the HR related processes so that all we have to worry about is the actual work. Their rates are reasonable as well.",
+      "We use Nexus Co as a recruiting resource as we prefer that all of our products are developed inhouse. They are able to find strong candidates quickly. We've been happy with the skill level of the people we hired through them. The Nexus Co team also takes care of all of the HR related processes so that all we have to worry about is the actual work. Their rates are reasonable as well.",
     client: {
       name: "Vlad Lipunov",
       title: "Cofounder - CTO",
@@ -67,7 +67,7 @@ const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Took us 2-weeks every month to generate/collate manual reports, delaying crucial decisions. Kainovation developed real-time, web-based reports on IBM Cognos using our consolidated ODS (Operational Data Store). Thanks to them we are more efficient, profitable, and our customers are happier.",
+      "Took us 2-weeks every month to generate/collate manual reports, delaying crucial decisions. Nexus Co developed real-time, web-based reports on IBM Cognos using our consolidated ODS (Operational Data Store). Thanks to them we are more efficient, profitable, and our customers are happier.",
     client: {
       name: "Clement Fernandopulle",
       title: "Fairfirst Insurance - CTO",
@@ -84,7 +84,7 @@ export const servicesData: Service[] = [
     description:
       "Build scalable, secure, and high-performance applications that support your marketing and business goals. Our solutions integrate seamlessly with your systems, powering smarter campaigns, customer experiences, and digital innovation.",
     icon: FiCode,
-    gradient: "from-cyan-500 to-blue-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Full-Stack Development",
       "API Integrations",
@@ -100,7 +100,7 @@ export const servicesData: Service[] = [
     description:
       "We embed ourselves as a unified team, aligning marketing, brand, and technology to execute seamlessly. Driven by strategic insight, every effort works in sync to maximise impact.",
     icon: FiTrendingUp,
-    gradient: "from-amber-500 to-yellow-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Marketing & Brand Strategy",
       "Website Experience & SEO",
@@ -116,7 +116,7 @@ export const servicesData: Service[] = [
     description:
       "Design, build, and optimise scalable data systems that turn raw information into actionable insights. From legacy platforms to modern cloud solutions, we create a reliable infrastructure that powers smarter decisions, drives efficiency, and supports growth across your business.",
     icon: FiDatabase,
-    gradient: "from-violet-500 to-purple-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "ETL/ELT Pipelines",
       "Cloud Data Lakes",
@@ -132,7 +132,7 @@ export const servicesData: Service[] = [
     description:
       "Harness intelligent systems to optimise business processes, predict trends, and automate smarter decisions across marketing, operations, and strategy. Our solutions turn data into actionable insights that drive growth, efficiency, and measurable results.",
     icon: FiCpu,
-    gradient: "bg-[#FF8600]",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Predictive Analytics",
       "Neural Networks",
@@ -148,7 +148,7 @@ export const servicesData: Service[] = [
     description:
       "Scale your team with our expert developers and data scientists. We provide skilled professionals who integrate seamlessly into your projects, ensuring rapid delivery and high quality.",
     icon: FiUsers,
-    gradient: "from-pink-500 to-rose-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "On-Demand Talent",
       "Flexible Engagement Models",
@@ -164,7 +164,7 @@ export const servicesData: Service[] = [
     description:
       "Transform raw data into actionable insights with cutting-edge visualization and analytics platforms. We create powerful dashboards that reveal hidden patterns and drive strategic decisions.",
     icon: FiTrendingUp,
-    gradient: "from-emerald-500 to-teal-600",
+    gradient: "from-brand-blue to-brand-deep",
     features: [
       "Azure Synapse Analytics",
       "Power BI Dashboards",
@@ -251,8 +251,8 @@ export default function ServicesPage() {
     setIsSubmitting(true);
     try {
       const templateParams = {
-        to_name: "Kainovation Team",
-        to_email: "hello@kainovation.com",
+        to_name: "Nexus Co Team",
+        to_email: "hello@nexusco.com",
         from_name: formData.name,
         subject: "New Proposal Request - Services Page",
         client_name: formData.name,
@@ -320,7 +320,7 @@ export default function ServicesPage() {
       <section className="relative min-h-screen bg-brand-deep text-white flex justify-center items-center overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl animate-pulse" />
           <div
             className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-400/10 rounded-full blur-3xl animate-pulse"
             style={{ animationDelay: "1s" }}
@@ -357,11 +357,11 @@ export default function ServicesPage() {
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6"
               variants={itemVariants}
             >
-              <span className="bg-linear-to-r from-white via-blue-200 to-slate-200 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-white via-orange-200 to-slate-200 bg-clip-text text-transparent">
                 Our
               </span>
               {" "}
-              <span className="bg-linear-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-orange to-[#ffb84d] bg-clip-text text-transparent">
                 Services
               </span>
             </motion.h1>
@@ -401,7 +401,7 @@ export default function ServicesPage() {
 
             {/* CTA Button */}
             <motion.button
-              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
+              className="group relative bg-brand-orange text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-orange/50"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -423,7 +423,7 @@ export default function ServicesPage() {
       <section className="relative bg-slate-50 py-12 sm:py-16 md:py-20 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-orange-200/30 rounded-full blur-3xl animate-pulse" />
           <div
             className="absolute bottom-1/4 right-1/6 w-80 h-80 bg-indigo-200/30 rounded-full blur-3xl animate-pulse"
             style={{ animationDelay: "1.5s" }}
@@ -442,7 +442,7 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6">
               <FiLayers className="mr-2" style={{ color: "#10064C" }} />
               <span className="text-sm font-medium" style={{ color: "#10064C" }}>
                 Our Approach
@@ -450,11 +450,11 @@ export default function ServicesPage() {
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 End-to-end solutions
               </span>
               <br />
-              <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 that work
               </span>
             </h2>
@@ -474,7 +474,7 @@ export default function ServicesPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             {/* The Problem */}
-            <div className="bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg">
+            <div className="bg-white/80 backdrop-blur-sm border border-orange-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-800 rounded-xl flex items-center justify-center">
                   <FiAlertCircle className="text-white text-lg sm:text-xl" />
@@ -524,12 +524,12 @@ export default function ServicesPage() {
                     Our Approach
                   </h3>
                 </div>
-                <p className="text-base sm:text-lg text-blue-100 leading-relaxed mb-6">
+                <p className="text-base sm:text-lg text-brand-light leading-relaxed mb-6">
                   We follow a structured, end-to-end process that ensures every
                   decision is aligned, intentional, and built for scale.
                 </p>
                 <div className="p-4 sm:p-5 bg-white/10 backdrop-blur-sm rounded-xl border border-white/10">
-                  <p className="text-sm sm:text-base font-semibold text-blue-100">
+                  <p className="text-sm sm:text-base font-semibold text-brand-light">
                     The long-term outcome &mdash; a system to scale, better results,
                     and overall cost efficiencies.
                   </p>
@@ -548,7 +548,7 @@ export default function ServicesPage() {
           >
             <div className="text-center mb-10 sm:mb-14">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-black">
-                <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                   5 key steps we believe in for almost every project!
                 </span>
               </h3>
@@ -596,13 +596,13 @@ export default function ServicesPage() {
                   return (
                     <motion.div
                       key={item.title}
-                      className="bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center"
+                      className="bg-white/80 backdrop-blur-sm border border-orange-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       whileHover={{ y: -5 }}
                     >
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-linear-to-br from-[#10064C] to-[#3B82F6] rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 shadow-lg">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-linear-to-br from-brand-deep to-brand-orange rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 shadow-lg">
                         <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                       </div>
                       <span className="text-xs font-bold text-brand-deep mb-2">
@@ -630,7 +630,7 @@ export default function ServicesPage() {
           >
             <div className="text-center mb-10 sm:mb-14">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-black">
-                <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                   Our &ldquo;WHY&rdquo;
                 </span>
               </h3>
@@ -657,7 +657,7 @@ export default function ServicesPage() {
                     <div className="absolute inset-0 bg-[linear-gradient(rgba(147,197,253,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(147,197,253,0.05)_1px,transparent_1px)] bg-size-[1rem_1rem]" />
                     <div className="relative z-10">
                       <div className="w-10 h-10 bg-brand-blue/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-                        <Icon className="w-5 h-5 text-blue-300" />
+                        <Icon className="w-5 h-5 text-brand-light" />
                       </div>
                       <p className="text-sm sm:text-base font-semibold">
                         {item.label}
@@ -677,7 +677,7 @@ export default function ServicesPage() {
       <section className="relative bg-slate-50 py-12 sm:py-16 md:py-20" id="services">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-200/20 rounded-full blur-3xl" />
         </div>
 
@@ -692,7 +692,7 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+            <div className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6">
               <FiZap className="mr-2 text-base" style={{ color: "#10064C" }} />
               <span
                 className="text-base font-medium"
@@ -703,11 +703,11 @@ export default function ServicesPage() {
             </div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 Our Complete
               </span>
               <br />
-              <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 Service Portfolio
               </span>
             </h2>
@@ -750,7 +750,7 @@ export default function ServicesPage() {
           >
             {/* Enhanced badge */}
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-3 mb-8"
+              className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-3 mb-8"
             >
               <FiUsers className="mr-2 text-brand-deep" />
               <span className="text-sm font-medium text-brand-deep">
@@ -759,11 +759,11 @@ export default function ServicesPage() {
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 Trusted By
               </span>
               <br />
-              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 Industry Leaders
               </span>
             </h2>
@@ -787,7 +787,7 @@ export default function ServicesPage() {
           >
             <div className="text-center mb-12">
               <h3 className="text-3xl sm:text-5xl font-black">
-                <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                   What Our Clients Say
                 </span>
               </h3>
@@ -822,7 +822,7 @@ export default function ServicesPage() {
             <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-none tracking-tight">
               <span className="text-slate-800">REQUEST A</span>
               <br />
-              <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 PROPOSAL.
               </span>
             </h2>
@@ -847,7 +847,7 @@ export default function ServicesPage() {
                 onChange={handleInputChange}
                 placeholder="NAME *"
                 required
-                className="w-full border-b-2 border-gray-200 focus:border-blue-500 outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
+                className="w-full border-b-2 border-gray-200 focus:border-brand-orange outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
               />
             </div>
 
@@ -860,7 +860,7 @@ export default function ServicesPage() {
                 onChange={handleInputChange}
                 placeholder="PHONE NUMBER *"
                 required
-                className="w-full border-b-2 border-gray-200 focus:border-blue-500 outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
+                className="w-full border-b-2 border-gray-200 focus:border-brand-orange outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
               />
               <input
                 type="email"
@@ -869,7 +869,7 @@ export default function ServicesPage() {
                 onChange={handleInputChange}
                 placeholder="WORK EMAIL *"
                 required
-                className="w-full border-b-2 border-gray-200 focus:border-blue-500 outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
+                className="w-full border-b-2 border-gray-200 focus:border-brand-orange outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
               />
             </div>
 
@@ -882,7 +882,7 @@ export default function ServicesPage() {
                 onChange={handleInputChange}
                 placeholder="BUSINESS NAME *"
                 required
-                className="w-full border-b-2 border-gray-200 focus:border-blue-500 outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
+                className="w-full border-b-2 border-gray-200 focus:border-brand-orange outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
               />
             </div>
 
@@ -902,7 +902,7 @@ export default function ServicesPage() {
                       <div
                         className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${
                           formData.stage === option
-                            ? "border-blue-500 bg-brand-blue"
+                            ? "border-brand-orange bg-brand-orange"
                             : "border-gray-300 group-hover:border-gray-400"
                         }`}
                       >
@@ -940,7 +940,7 @@ export default function ServicesPage() {
                       <div
                         className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${
                           formData.budget === option
-                            ? "border-blue-500 bg-brand-blue"
+                            ? "border-brand-orange bg-brand-orange"
                             : "border-gray-300 group-hover:border-gray-400"
                         }`}
                       >
@@ -978,7 +978,7 @@ export default function ServicesPage() {
                       <div
                         className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 ${
                           formData.requirements.includes(option)
-                            ? "border-blue-500 bg-brand-blue"
+                            ? "border-brand-orange bg-brand-orange"
                             : "border-gray-300 group-hover:border-gray-400"
                         }`}
                       >
@@ -1009,7 +1009,7 @@ export default function ServicesPage() {
                 onChange={handleInputChange}
                 placeholder="TELL US ABOUT YOUR BUSINESS *"
                 rows={4}
-                className="w-full border-b-2 border-gray-200 focus:border-blue-500 outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent resize-none"
+                className="w-full border-b-2 border-gray-200 focus:border-brand-orange outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent resize-none"
               />
             </div>
 
@@ -1019,7 +1019,7 @@ export default function ServicesPage() {
                 <div
                   className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${
                     formData.subscribe
-                      ? "border-blue-500 bg-brand-blue"
+                      ? "border-brand-orange bg-brand-orange"
                       : "border-gray-300 group-hover:border-gray-400"
                   }`}
                 >
@@ -1043,7 +1043,7 @@ export default function ServicesPage() {
                 <div
                   className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${
                     formData.consent
-                      ? "border-blue-500 bg-brand-blue"
+                      ? "border-brand-orange bg-brand-orange"
                       : "border-gray-300 group-hover:border-gray-400"
                   }`}
                 >
@@ -1081,7 +1081,7 @@ export default function ServicesPage() {
                 className={`group relative font-bold py-4 px-10 sm:px-14 rounded-full overflow-hidden shadow-xl text-base sm:text-lg transition-all ${
                   isSubmitting
                     ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                    : "bg-linear-to-r from-[#10064C] to-[#3B82F6] text-white hover:shadow-2xl"
+                    : "bg-linear-to-r from-brand-deep to-brand-orange text-white hover:shadow-2xl"
                 }`}
                 whileHover={!isSubmitting ? { scale: 1.02 } : {}}
                 whileTap={!isSubmitting ? { scale: 0.98 } : {}}

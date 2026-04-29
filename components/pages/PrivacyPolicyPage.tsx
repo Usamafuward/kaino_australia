@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
       <section className="relative min-h-screen bg-brand-deep text-white flex justify-center items-center overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl animate-pulse" />
           <div
             className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-400/10 rounded-full blur-3xl animate-pulse"
             style={{ animationDelay: "1s" }}
@@ -88,11 +88,11 @@ export default function PrivacyPolicyPage() {
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6"
               variants={itemVariants}
             >
-              <span className="bg-linear-to-r from-white via-blue-200 to-slate-200 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-white via-orange-200 to-slate-200 bg-clip-text text-transparent">
                 Privacy
               </span>
               {" "}
-              <span className="bg-linear-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-orange to-[#ffb84d] bg-clip-text text-transparent">
                 Policy
               </span>
             </motion.h1>
@@ -112,7 +112,7 @@ export default function PrivacyPolicyPage() {
               variants={itemVariants}
             >
               <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
-                <FiFileText className="text-blue-400 mr-2" />
+                <FiFileText className="text-brand-orange mr-2" />
                 <span className="text-sm">Last Updated: 14th October 2022</span>
               </div>
               <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
@@ -123,7 +123,7 @@ export default function PrivacyPolicyPage() {
 
             {/* CTA Button */}
             <motion.button
-              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
+              className="group relative bg-brand-orange text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-orange/50"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -150,7 +150,7 @@ export default function PrivacyPolicyPage() {
       >
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-blue-100/30 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-orange-100/30 rounded-full blur-3xl" />
           <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl" />
         </div>
 
@@ -167,7 +167,7 @@ export default function PrivacyPolicyPage() {
           >
             {/* Badge */}
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6"
+              className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6"
             >
               <FiInfo className="mr-2 text-brand-deep" />
               <span className="text-sm font-medium text-brand-deep">
@@ -179,7 +179,7 @@ export default function PrivacyPolicyPage() {
               className="text-4xl sm:text-5xl md:text-6xl font-black mb-6"
               variants={itemVariants}
             >
-              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 What This Policy Covers
               </span>
             </motion.h2>
@@ -222,7 +222,7 @@ export default function PrivacyPolicyPage() {
             ].map((item, index) => (
               <motion.div
                 key={item.title}
-                className="group bg-linear-to-br from-white to-blue-50/30 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border border-blue-100/50"
+                className="group bg-linear-to-br from-white to-blue-50/30 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border border-orange-100/50"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -243,19 +243,19 @@ export default function PrivacyPolicyPage() {
 
           {/* Introduction */}
           <motion.div
-            className="bg-linear-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-8 mb-16"
+            className="bg-linear-to-r from-blue-50 to-indigo-50 border border-orange-200 rounded-2xl p-8 mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              At Kainovation Technologies, accessible from{" "}
+              At Nexus Co Technologies, accessible from{" "}
               <a
-                href="https://kainovation.com/"
+                href="https://nexusco.com/"
                 className="text-brand-deep hover:underline font-medium"
               >
-                https://kainovation.com/
+                https://nexusco.com/
               </a>
               , we always ensure that the information collected from you is
               protected in all costs. This privacy policy document that we
@@ -265,7 +265,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               By providing us information through our forums, you signify your
-              acceptance of our Privacy Policy. Kainovation Technologies is the
+              acceptance of our Privacy Policy. Nexus Co Technologies is the
               sole owner of this website including all the information that you
               submit through it.
             </p>
@@ -290,13 +290,13 @@ export default function PrivacyPolicyPage() {
                 </h2>
               </div>
 
-              <div className="bg-blue-50 rounded-xl p-6 mb-6 border border-blue-200">
+              <div className="bg-orange-50 rounded-xl p-6 mb-6 border border-orange-200">
                 <p className="text-gray-700 leading-relaxed mb-4">
                   All information that is collected depends on your actions
                   within the website. Your personal details such as your name,
                   email, and contact number are retrieved for any future
                   purposes when we need to contact you. In addition to this, any
-                  other analytical information required to improve Kainovation
+                  other analytical information required to improve Nexus Co
                   will be collected.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
@@ -327,7 +327,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
               </div>
 
-              <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+              <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
                 <p className="text-gray-700 leading-relaxed">
                   We collect personal information such as your Name, Email, and
                   Contact Number which is collected through the Contact Form
@@ -354,7 +354,7 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-6">
-                <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
                   <h3 className="text-xl font-semibold text-slate-800 mb-3 flex items-center">
                     <FiCheck className="text-brand-deep mr-2" />
                     Log Files
@@ -362,28 +362,28 @@ export default function PrivacyPolicyPage() {
                   <p className="text-gray-700 leading-relaxed">
                     The information collected for Analytics through the website
                     is known as &apos;Log Files&apos;. These files log user information
-                    when you visit Kainovation and track all actions done within
+                    when you visit Nexus Co and track all actions done within
                     the website. All hosting companies do this as a part of
                     their hosting services&apos; analytics.
                   </p>
                 </div>
 
-                <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
                   <h3 className="text-xl font-semibold text-slate-800 mb-3 flex items-center">
                     <FiCheck className="text-brand-deep mr-2" />
                     Analytics
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    To measure Kainovation&apos;s Analytics we use Google Analytics.
+                    To measure Nexus Co&apos;s Analytics we use Google Analytics.
                     The log files that are collected are used by these tools to
                     give us an idea about how well the website is doing and what
                     areas could improve for our visitors. Such information is
-                    valuable for Kainovation to make sure all our visitors have
+                    valuable for Nexus Co to make sure all our visitors have
                     a seamless experience within the website.
                   </p>
                 </div>
 
-                <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
                   <h3 className="text-xl font-semibold text-slate-800 mb-3 flex items-center">
                     <FiCheck className="text-brand-deep mr-2" />
                     Cookies
@@ -392,7 +392,7 @@ export default function PrivacyPolicyPage() {
                     Cookies, also known as browser cookies, are small encrypted
                     text files located in the browser directories. These files
                     help web developers to navigate the functionality they
-                    perform certain functions. Kainovation does not use any
+                    perform certain functions. Nexus Co does not use any
                     cookies to get information from our users but as we use
                     third-party integrations there can be instances where you
                     would have to accept any cookies.
@@ -418,7 +418,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
               </div>
 
-              <div className="bg-blue-50 rounded-xl p-6 mb-6 border border-blue-200">
+              <div className="bg-orange-50 rounded-xl p-6 mb-6 border border-orange-200">
                 <p className="text-gray-700 leading-relaxed mb-4">
                   These data protection regulations allow any individual to have
                   easier access to the data that is collected and helps to
@@ -439,7 +439,7 @@ export default function PrivacyPolicyPage() {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-start bg-white rounded-lg p-4 border border-blue-200"
+                    className="flex items-start bg-white rounded-lg p-4 border border-orange-200"
                   >
                     <FiCheck className="text-brand-deep mr-3 mt-1 shrink-0" />
                     <span className="text-gray-700">{item}</span>
@@ -465,12 +465,12 @@ export default function PrivacyPolicyPage() {
                 </h2>
               </div>
 
-              <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+              <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  One of the main concerns at Kainovation is protection for
+                  One of the main concerns at Nexus Co is protection for
                   children while using the internet. While we encourage parents
                   to acknowledge and guide children&apos;s activities on the
-                  internet, Kainovation do not knowingly collect any personally
+                  internet, Nexus Co do not knowingly collect any personally
                   identifiable information from anyone under the age of 13.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
@@ -497,19 +497,19 @@ export default function PrivacyPolicyPage() {
                   </div>
                 </div>
                 <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-                <p className="text-blue-100 leading-relaxed mb-6">
-                  If you have any questions about Kainovation&apos;s privacy policy,
+                <p className="text-brand-light leading-relaxed mb-6">
+                  If you have any questions about Nexus Co&apos;s privacy policy,
                   please do not hesitate to contact us through{" "}
                   <a
-                    href="mailto:hello@kainovation.com"
+                    href="mailto:hello@nexusco.com"
                     className="text-white hover:underline font-medium"
                   >
-                    hello@kainovation.com
+                    hello@nexusco.com
                   </a>
                   . We are open to any suggestions that you have!
                 </p>
                 {/* <motion.a
-                  href="mailto:hello@kainovation.com"
+                  href="mailto:hello@nexusco.com"
                   className="inline-flex items-center bg-white text-brand-deep font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

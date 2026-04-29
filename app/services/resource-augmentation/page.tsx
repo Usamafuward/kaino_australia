@@ -159,7 +159,7 @@ export default function ResourceAugmentationPage() {
       {/* SECTION 1: HERO */}
       <section className="relative min-h-[80vh] bg-linear-to-br from-brand-deep to-brand-blue text-white flex justify-center items-center overflow-hidden pt-24 pb-16">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl animate-pulse" />
           <div
             className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-400/10 rounded-full blur-3xl animate-pulse"
             style={{ animationDelay: "1s" }}
@@ -187,7 +187,7 @@ export default function ResourceAugmentationPage() {
               className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-6"
               variants={itemVariants}
             >
-              <span className="bg-linear-to-r from-white via-blue-200 to-slate-200 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-white via-orange-200 to-slate-200 bg-clip-text text-transparent">
                 Resource Augmentation
               </span>
             </motion.h1>
@@ -198,7 +198,7 @@ export default function ResourceAugmentationPage() {
               Scale your team with our expert developers and data scientists. We provide skilled professionals who integrate seamlessly into your projects, ensuring rapid delivery and high quality.
             </motion.p>
             <motion.button
-              className="group relative bg-linear-to-r from-pink-500 to-rose-600 text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl"
+              className="group relative bg-brand-orange hover:bg-brand-orange/90 text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-orange/50"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -229,7 +229,7 @@ export default function ResourceAugmentationPage() {
               <p className="text-lg text-gray-600 mb-8">
                 Our approach to Resource Augmentation provides comprehensive solutions tailored to scale your operations and drive results. Here are the core focus areas:
               </p>
-              <ul className="space-y-4">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 
                   <motion.li
                     key={0}
@@ -239,7 +239,7 @@ export default function ResourceAugmentationPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 0 * 0.1 }}
                   >
-                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-pink-500 to-rose-600 flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-brand-orange to-[#e67900] flex items-center justify-center shrink-0">
                       <FiCheck className="text-white" />
                     </div>
                     <span className="font-semibold text-slate-700">On-Demand Talent</span>
@@ -252,7 +252,7 @@ export default function ResourceAugmentationPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 1 * 0.1 }}
                   >
-                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-pink-500 to-rose-600 flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-brand-orange to-[#e67900] flex items-center justify-center shrink-0">
                       <FiCheck className="text-white" />
                     </div>
                     <span className="font-semibold text-slate-700">Flexible Engagement Models</span>
@@ -265,7 +265,7 @@ export default function ResourceAugmentationPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 2 * 0.1 }}
                   >
-                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-pink-500 to-rose-600 flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-brand-orange to-[#e67900] flex items-center justify-center shrink-0">
                       <FiCheck className="text-white" />
                     </div>
                     <span className="font-semibold text-slate-700">Domain Expertise</span>
@@ -278,7 +278,7 @@ export default function ResourceAugmentationPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 3 * 0.1 }}
                   >
-                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-pink-500 to-rose-600 flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-brand-orange to-[#e67900] flex items-center justify-center shrink-0">
                       <FiCheck className="text-white" />
                     </div>
                     <span className="font-semibold text-slate-700">Rapid Onboarding</span>
@@ -290,9 +290,9 @@ export default function ResourceAugmentationPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="relative aspect-square max-w-lg mx-auto w-full"
+              className="relative aspect-4/3 max-w-md mx-auto w-full"
             >
-              <div className="absolute inset-0 bg-linear-to-br from-pink-500 to-rose-600 rounded-3xl transform rotate-3 opacity-20" />
+              <div className="absolute inset-0 bg-linear-to-br from-brand-orange to-[#e67900] rounded-3xl transform rotate-8 opacity-20" />
               <div className="absolute inset-4 rounded-2xl overflow-hidden border-4 border-white shadow-2xl">
                 <Image
                   src={resource_augmentation}
@@ -350,11 +350,11 @@ export default function ResourceAugmentationPage() {
             <h2 className="text-5xl sm:text-6xl md:text-7xl font-black leading-none tracking-tight">
               <span className="text-slate-800">REQUEST A</span>
               <br />
-              <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 PROPOSAL.
               </span>
             </h2>
-            <div className="mt-4 h-1.5 w-full max-w-4xl bg-linear-to-r from-[#3B82F6] via-[#A855F7] to-[#EC4899] rounded-full" />
+            <div className="mt-4 h-1.5 w-full max-w-4xl bg-linear-to-r from-brand-blue to-brand-orange rounded-full" />
           </motion.div>
 
           <motion.form
@@ -374,7 +374,7 @@ export default function ResourceAugmentationPage() {
                 onChange={handleInputChange}
                 placeholder="NAME *"
                 required
-                className="w-full border-b-2 border-gray-200 focus:border-blue-500 outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
+                className="w-full border-b-2 border-gray-200 focus:border-brand-orange outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
               />
             </div>
 
@@ -387,7 +387,7 @@ export default function ResourceAugmentationPage() {
                 onChange={handleInputChange}
                 placeholder="PHONE NUMBER *"
                 required
-                className="w-full border-b-2 border-gray-200 focus:border-blue-500 outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
+                className="w-full border-b-2 border-gray-200 focus:border-brand-orange outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
               />
               <input
                 type="email"
@@ -396,7 +396,7 @@ export default function ResourceAugmentationPage() {
                 onChange={handleInputChange}
                 placeholder="WORK EMAIL *"
                 required
-                className="w-full border-b-2 border-gray-200 focus:border-blue-500 outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
+                className="w-full border-b-2 border-gray-200 focus:border-brand-orange outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
               />
             </div>
 
@@ -409,7 +409,7 @@ export default function ResourceAugmentationPage() {
                 onChange={handleInputChange}
                 placeholder="BUSINESS NAME *"
                 required
-                className="w-full border-b-2 border-gray-200 focus:border-blue-500 outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
+                className="w-full border-b-2 border-gray-200 focus:border-brand-orange outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent"
               />
             </div>
 
@@ -421,7 +421,7 @@ export default function ResourceAugmentationPage() {
                 <div className="space-y-3">
                   {stageOptions.map((option) => (
                     <label key={option} className="flex items-center gap-3 cursor-pointer group">
-                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${formData.stage === option ? "border-blue-500 bg-brand-blue" : "border-gray-300 group-hover:border-gray-400"}`}>
+                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${formData.stage === option ? "border-brand-orange bg-brand-orange" : "border-gray-300 group-hover:border-gray-400"}`}>
                         {formData.stage === option && <div className="w-2 h-2 bg-white rounded-full" />}
                       </div>
                       <input type="radio" name="stage" value={option} checked={formData.stage === option} onChange={handleInputChange} className="hidden" />
@@ -438,7 +438,7 @@ export default function ResourceAugmentationPage() {
                 <div className="space-y-3">
                   {budgetOptions.map((option) => (
                     <label key={option} className="flex items-center gap-3 cursor-pointer group">
-                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${formData.budget === option ? "border-blue-500 bg-brand-blue" : "border-gray-300 group-hover:border-gray-400"}`}>
+                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${formData.budget === option ? "border-brand-orange bg-brand-orange" : "border-gray-300 group-hover:border-gray-400"}`}>
                         {formData.budget === option && <div className="w-2 h-2 bg-white rounded-full" />}
                       </div>
                       <input type="radio" name="budget" value={option} checked={formData.budget === option} onChange={handleInputChange} className="hidden" />
@@ -455,7 +455,7 @@ export default function ResourceAugmentationPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {requirementOptions.map((option) => (
                     <label key={option} className="flex items-center gap-3 cursor-pointer group">
-                      <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 ${formData.requirements.includes(option) ? "border-blue-500 bg-brand-blue" : "border-gray-300 group-hover:border-gray-400"}`}>
+                      <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 ${formData.requirements.includes(option) ? "border-brand-orange bg-brand-orange" : "border-gray-300 group-hover:border-gray-400"}`}>
                         {formData.requirements.includes(option) && <FiCheck className="w-3 h-3 text-white" />}
                       </div>
                       <input type="checkbox" checked={formData.requirements.includes(option)} onChange={() => toggleRequirement(option)} className="hidden" />
@@ -473,13 +473,13 @@ export default function ResourceAugmentationPage() {
                 onChange={handleInputChange}
                 placeholder="TELL US ABOUT YOUR BUSINESS *"
                 rows={4}
-                className="w-full border-b-2 border-gray-200 focus:border-blue-500 outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent resize-none"
+                className="w-full border-b-2 border-gray-200 focus:border-brand-orange outline-none py-4 text-sm sm:text-base font-medium text-gray-800 placeholder:text-gray-400 placeholder:font-semibold placeholder:tracking-widest transition-colors bg-transparent resize-none"
               />
             </div>
 
             <div className="space-y-4 pt-2">
               <label className="flex items-start gap-3 cursor-pointer group">
-                <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${formData.subscribe ? "border-blue-500 bg-brand-blue" : "border-gray-300 group-hover:border-gray-400"}`}>
+                <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${formData.subscribe ? "border-brand-orange bg-brand-orange" : "border-gray-300 group-hover:border-gray-400"}`}>
                   {formData.subscribe && <FiCheck className="w-3 h-3 text-white" />}
                 </div>
                 <input type="checkbox" name="subscribe" checked={formData.subscribe} onChange={handleCheckboxChange} className="hidden" />
@@ -487,7 +487,7 @@ export default function ResourceAugmentationPage() {
               </label>
 
               <label className="flex items-start gap-3 cursor-pointer group">
-                <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${formData.consent ? "border-blue-500 bg-brand-blue" : "border-gray-300 group-hover:border-gray-400"}`}>
+                <div className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors shrink-0 mt-0.5 ${formData.consent ? "border-brand-orange bg-brand-orange" : "border-gray-300 group-hover:border-gray-400"}`}>
                   {formData.consent && <FiCheck className="w-3 h-3 text-white" />}
                 </div>
                 <input type="checkbox" name="consent" checked={formData.consent} onChange={handleCheckboxChange} className="hidden" required />
@@ -499,7 +499,7 @@ export default function ResourceAugmentationPage() {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className={`group relative font-bold py-4 px-10 sm:px-14 rounded-full overflow-hidden shadow-xl text-base sm:text-lg transition-all ${isSubmitting ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "bg-linear-to-r from-[#10064C] to-[#3B82F6] text-white hover:shadow-2xl"}`}
+                className={`group relative font-bold py-4 px-10 sm:px-14 rounded-full overflow-hidden shadow-xl text-base sm:text-lg transition-all ${isSubmitting ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "bg-linear-to-r from-brand-deep to-brand-orange text-white hover:shadow-2xl"}`}
                 whileHover={!isSubmitting ? { scale: 1.02 } : {}}
                 whileTap={!isSubmitting ? { scale: 0.98 } : {}}
               >
@@ -519,7 +519,7 @@ export default function ResourceAugmentationPage() {
                     </>
                   )}
                 </span>
-                {!isSubmitting && <div className="absolute inset-0 bg-linear-to-r bg-[#FF8600] opacity-0 group-hover:opacity-100 transition-opacity" />}
+                {!isSubmitting && <div className="absolute inset-0 bg-linear-to-r bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity" />}
               </motion.button>
 
               {submitStatus === "success" && (

@@ -92,7 +92,7 @@ export default function TestimonialCard({ quote, client, image, keywords }: Test
 
       {/* Quote Card */}
       <motion.div 
-        className="relative bg-linear-to-br from-white to-blue-50 backdrop-blur-sm border border-blue-100 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-md sm:shadow-lg"
+        className="relative bg-linear-to-br from-white to-blue-50 backdrop-blur-sm border border-orange-100 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-md sm:shadow-lg"
         whileHover={{ 
           backgroundColor: "rgba(255,255,255,0.95)",
           boxShadow: "0 20px 50px -15px rgba(125, 95, 255, 0.2)"
@@ -118,7 +118,7 @@ export default function TestimonialCard({ quote, client, image, keywords }: Test
           
           {/* <div className="mt-6 flex items-center justify-end">
             <div className="flex items-center space-x-2">
-              <div className="h-0.5 w-8 bg-blue-300"></div>
+              <div className="h-0.5 w-8 bg-orange-300"></div>
               <span className="text-sm font-medium text-brand-deep">Success Story</span>
             </div>
           </div> */}

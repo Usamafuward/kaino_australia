@@ -37,9 +37,9 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --color-brand-deep: #27187E;
-  --color-brand-blue: #758BFD;
-  --color-brand-light: #AEB8FE;
+  --color-brand-deep: #001f5c;
+  --color-brand-blue: #1e3a8a;
+  --color-brand-light: #bfdbfe;
   --color-brand-gray: #F1F2F6;
   --color-brand-orange: #FF8600;
   --radius-sm: calc(var(--radius) - 4px);

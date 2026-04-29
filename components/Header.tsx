@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { FiMenu, FiX, FiArrowRight, FiChevronDown } from 'react-icons/fi';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import logo from '@/public/assets/logo.png';
+import logo from '@/public/assets/logo-new.png';
 import { usePathname } from 'next/navigation';
 
 type NavItem = {
@@ -117,9 +117,9 @@ export default function Header() {
               <div className="w-11 h-11 sm:w-14 sm:h-14 bg-white rounded-xl flex items-center justify-center p-2 border border-gray-200/50">
                 <Image
                   src={logo}
-                  alt="Fairfirst Insurance Logo"
-                  width={50}
-                  height={50}
+                  alt="Nexus Co Logo"
+                  width={100}
+                  height={100}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -130,13 +130,13 @@ export default function Header() {
                 transition={{ duration: 0.5 }}
                 onClick={() => window.location.href = "/"}
               >
-                <span className="bg-blue-400 bg-clip-text text-transparent">
-                  KAINO
+                <span className="text-white">
+                  Nexus
                 </span>
-                <span className="relative">
-                  VATION
+                <span className="relative text-brand-orange">
+                  {' '}Co
                   <motion.div
-                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-linear-to-r from-brand-blue to-brand-deep origin-left"
+                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-linear-to-r from-white to-brand-orange origin-left"
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -164,7 +164,7 @@ export default function Header() {
                       {link.submenu && <FiChevronDown className="transition-transform group-hover:rotate-180" />}
                       {isActive && (
                         <motion.div
-                          className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-400 origin-left"
+                          className="absolute -bottom-1 left-0 w-full h-0.5 bg-brand-orange origin-left"
                           layoutId="activeIndicator"
                           initial={{ scaleX: 0 }}
                           animate={{ scaleX: 1 }}
@@ -173,7 +173,7 @@ export default function Header() {
                       )}
                       {!isActive && (
                         <motion.div
-                          className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-400 origin-left"
+                          className="absolute -bottom-1 left-0 w-full h-0.5 bg-brand-orange origin-left"
                           initial={{ scaleX: 0 }}
                           whileHover={{ scaleX: 1 }}
                           transition={{ duration: 0.2 }}
@@ -274,8 +274,8 @@ export default function Header() {
                     href={link.href}
                     className={`flex items-center gap-2 text-3xl font-bold transition-colors duration-300 ${
                       isActive 
-                        ? 'text-blue-400' 
-                        : 'text-white hover:text-blue-400'
+                        ? 'text-brand-orange' 
+                        : 'text-white hover:text-brand-orange'
                     }`}
                     variants={itemVariants}
                     onClick={() => !link.submenu && setIsMenuOpen(false)}

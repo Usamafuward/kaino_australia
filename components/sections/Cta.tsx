@@ -13,7 +13,7 @@ import {
   FiAlertCircle,
 } from "react-icons/fi";
 import Image from "next/image";
-import logo from "@/public/assets/logo.png";
+import logo from "@/public/assets/logo-new.png";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -173,10 +173,10 @@ export default function CTAWithSchedulePopup() {
     setIsSubmitting(true);
 
     try {
-      // Prepare email template parameters to send to Kainovation
+      // Prepare email template parameters to send to Nexus Co
       const templateParams = {
-        to_name: "Kainovation Team",
-        to_email: "hello@kainovation.com",
+        to_name: "Nexus Co Team",
+        to_email: "hello@nexusco.com",
         from_name: formData.name,
         subject: "New Meeting Booking - Discovery Call",
         meeting_date: selectedDate?.toLocaleDateString("en-US", {
@@ -202,7 +202,7 @@ export default function CTAWithSchedulePopup() {
         }),
       };
 
-      // Send notification email to Kainovation
+      // Send notification email to Nexus Co
       await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
@@ -343,7 +343,7 @@ export default function CTAWithSchedulePopup() {
       >
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-blue-400/10 rounded-full blur-xl sm:blur-2xl md:blur-3xl animate-pulse" />
+          <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-brand-orange/10 rounded-full blur-xl sm:blur-2xl md:blur-3xl animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-brand-blue/10 rounded-full blur-xl sm:blur-2xl md:blur-3xl animate-pulse delay-1000" />
           <div className="absolute top-1/2 left-1/2 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 bg-sky-500/10 rounded-full blur-xl sm:blur-2xl md:blur-3xl animate-pulse delay-2000" />
         </div>
@@ -355,14 +355,14 @@ export default function CTAWithSchedulePopup() {
           <div className="max-w-4xl mx-auto text-center">
             {/* Badge */}
             <motion.div
-              className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1.5 sm:px-5 sm:py-2 md:px-6 md:py-2 mb-6 sm:mb-8"
+              className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-4 py-1.5 sm:px-5 sm:py-2 md:px-6 md:py-2 mb-6 sm:mb-8"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <FiZap className="text-blue-400 mr-1.5 sm:mr-2 text-sm sm:text-base" />
-              <span className="text-xs sm:text-sm font-medium text-blue-200">
+              <FiZap className="text-brand-orange mr-1.5 sm:mr-2 text-sm sm:text-base" />
+              <span className="text-xs sm:text-sm font-medium text-brand-light">
                 Ready to Transform?
               </span>
             </motion.div>
@@ -379,14 +379,14 @@ export default function CTAWithSchedulePopup() {
                 Time to Make
               </span>
               <span>{" "}</span>
-              <span className="bg-linear-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-orange to-[#ffb84d] bg-clip-text text-transparent">
                 Magic
               </span>
             </motion.h2>
 
             {/* Description */}
             <motion.p
-              className="text-base sm:text-lg md:text-xl text-blue-100 mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed"
+              className="text-base sm:text-lg md:text-xl text-brand-light mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -414,7 +414,7 @@ export default function CTAWithSchedulePopup() {
                 >
                   <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 group-hover:bg-white/15 group-hover:border- transition-all duration-300 group-hover:scale-105">
                     <div className="flex items-center justify-center mb-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full group-hover:scale-125 transition-transform duration-300"></div>
+                      <div className="w-2 h-2 bg-brand-orange rounded-full group-hover:scale-125 transition-transform duration-300"></div>
                     </div>
                     <p className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors duration-300">
                       {feature}
@@ -434,7 +434,7 @@ export default function CTAWithSchedulePopup() {
             >
               <motion.button
                 onClick={() => setShowPopup(true)}
-                className="group relative text-white font-bold bg-[#FF8600] hover:bg-[#FF8600]/90 py-3 px-6 sm:py-3.5 sm:px-7 md:py-4 md:px-8 rounded-full overflow-hidden shadow-lg sm:shadow-xl min-w-[180px] sm:min-w-[200px] text-sm sm:text-base"
+                className="group relative text-white font-bold bg-brand-orange hover:bg-brand-orange/90 py-3 px-6 sm:py-3.5 sm:px-7 md:py-4 md:px-8 rounded-full overflow-hidden shadow-lg sm:shadow-xl min-w-[180px] sm:min-w-[200px] text-sm sm:text-base"
                 whileHover={{
                   scale: 1.02,
                 }}
@@ -451,7 +451,7 @@ export default function CTAWithSchedulePopup() {
                 className="group relative bg-white/10 backdrop-blur-sm border border-white/20 text-white font-bold py-3 px-6 sm:py-3.5 sm:px-7 md:py-4 md:px-8 rounded-full overflow-hidden hover:bg-white/20 transition-all min-w-[180px] sm:min-w-[200px] text-sm sm:text-base"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                onClick={() => window.location.href = "mailto:hello@kainovation.com"}
+                onClick={() => window.location.href = "mailto:hello@nexusco.com"}
               >
                 <span className="relative z-10 flex items-center justify-center">
                   <FiMail className="mr-1.5 sm:mr-2 text-sm sm:text-base" />
@@ -510,12 +510,12 @@ export default function CTAWithSchedulePopup() {
                 <div className="w-16 h-16 bg-gray-200 rounded-lg mx-auto mb-3 flex items-center justify-center">
                   <Image
                     src={logo}
-                    alt="Kainovation Logo"
+                    alt="Nexus Co Logo"
                     className="w-12 h-12"
                   />
                 </div>
                 <div className="text-xs text-gray-500 mb-1">
-                  Kainovation Technologies
+                  Nexus Co
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   Discovery Meeting
@@ -588,7 +588,7 @@ export default function CTAWithSchedulePopup() {
                             ${
                               day.isCurrentMonth
                                 ? day.isSelectable
-                                  ? "text-gray-900 hover:bg-blue-50 hover:text-brand-deep border border-transparent hover:border-blue-200"
+                                  ? "text-gray-900 hover:bg-orange-50 hover:text-brand-deep border border-transparent hover:border-orange-200"
                                   : day.isPast
                                   ? "text-gray-300 cursor-not-allowed"
                                   : "text-gray-400 cursor-not-allowed"
@@ -596,7 +596,7 @@ export default function CTAWithSchedulePopup() {
                             }
                             ${
                               day.isToday
-                                ? "bg-brand-blue text-white font-semibold"
+                                ? "bg-brand-orange text-white font-semibold"
                                 : ""
                             }
                             ${
@@ -648,8 +648,8 @@ export default function CTAWithSchedulePopup() {
                           p-3 border rounded-lg text-sm font-medium transition-all
                           ${
                             selectedTime === time
-                              ? "border-blue-600 bg-brand-blue text-white"
-                              : "border-gray-200 text-gray-700 hover:border-blue-300 hover:bg-blue-50"
+                              ? "border-brand-orange bg-brand-orange text-white"
+                              : "border-gray-200 text-gray-700 hover:border-orange-300 hover:bg-orange-50"
                           }
                         `}
                       > 
@@ -678,7 +678,7 @@ export default function CTAWithSchedulePopup() {
                   </h4>
 
                   {/* Selected appointment summary */}
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                  <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-6">
                     <div className="flex items-center gap-3 text-gray-700 text-sm mb-2">
                       <FiCalendar className="text-brand-deep" />
                       <span className="font-medium">
@@ -709,7 +709,7 @@ export default function CTAWithSchedulePopup() {
                         onChange={(e) =>
                           handleFormChange("name", e.target.value)
                         }
-                        className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
                       />
                     </div>
                     <div>
@@ -724,7 +724,7 @@ export default function CTAWithSchedulePopup() {
                         onChange={(e) =>
                           handleFormChange("email", e.target.value)
                         }
-                        className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
                       />
                     </div>
                     <div>
@@ -738,7 +738,7 @@ export default function CTAWithSchedulePopup() {
                         onChange={(e) =>
                           handleFormChange("phone", e.target.value)
                         }
-                        className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
                       />
                     </div>
                     <div>
@@ -752,7 +752,7 @@ export default function CTAWithSchedulePopup() {
                         onChange={(e) =>
                           handleFormChange("notes", e.target.value)
                         }
-                        className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
                       />
                     </div>
                   </div>
@@ -766,7 +766,7 @@ export default function CTAWithSchedulePopup() {
                     className={`w-full font-semibold py-3 rounded-lg transition-colors ${
                       isSubmitting
                         ? "bg-gray-400 text-gray-600 cursor-not-allowed"
-                        : "bg-brand-blue text-white hover:bg-brand-deep"
+                        : "bg-brand-orange text-white hover:bg-brand-orange/90"
                     }`}
                   >
                     {isSubmitting ? (
@@ -799,7 +799,7 @@ export default function CTAWithSchedulePopup() {
                 ) : (
                   <button
                     onClick={() => setStep(step + 1)}
-                    className="w-full bg-brand-blue text-white font-semibold py-3 rounded-lg hover:bg-brand-deep transition-colors"
+                    className="w-full bg-brand-orange text-white font-semibold py-3 rounded-lg hover:bg-brand-orange/90 transition-colors"
                   >
                     Next
                   </button>

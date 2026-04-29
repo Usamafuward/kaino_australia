@@ -103,7 +103,7 @@ export default function BlogPostPage() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"></div>
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-brand-orange"></div>
       </div>
     );
   }
@@ -121,7 +121,7 @@ export default function BlogPostPage() {
           </p>
           <button
             onClick={onBack}
-            className="bg-brand-blue hover:bg-brand-deep text-white font-bold py-3 px-6 rounded-full transition-colors flex items-center mx-auto"
+            className="bg-brand-orange hover:bg-brand-orange/90 text-white font-bold py-3 px-6 rounded-full transition-colors flex items-center mx-auto"
           >
             <FiArrowLeft className="mr-2" />
             Back to Insight
@@ -212,8 +212,8 @@ export default function BlogPostPage() {
                           prose-p:text-slate-700 prose-p:leading-relaxed
                           prose-a:text-brand-deep prose-a:font-medium prose-a:transition-colors hover:prose-a:text-brand-deep
                           prose-img:rounded-xl prose-img:shadow-md
-                          prose-blockquote:border-l-4 prose-blockquote:border-blue-500
-                          prose-blockquote:bg-blue-50 prose-blockquote:p-4 prose-blockquote:font-medium prose-blockquote:text-slate-600 prose-blockquote:not-italic
+                          prose-blockquote:border-l-4 prose-blockquote:border-brand-orange
+                          prose-blockquote:bg-orange-50 prose-blockquote:p-4 prose-blockquote:font-medium prose-blockquote:text-slate-600 prose-blockquote:not-italic
                           prose-ul:list-disc prose-li:my-2 prose-li:marker:text-brand-deep
                           prose-ol:list-decimal prose-ol:marker:text-brand-deep
                           prose-strong:text-slate-800
@@ -237,7 +237,7 @@ export default function BlogPostPage() {
                   {post.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="inline-flex items-center bg-blue-100 text-brand-deep text-sm font-medium px-3 py-1 rounded-full"
+                      className="inline-flex items-center bg-orange-100 text-brand-deep text-sm font-medium px-3 py-1 rounded-full"
                     >
                       #{tag}
                     </span>

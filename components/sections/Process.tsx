@@ -108,7 +108,7 @@ export default function Process() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
+            className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
             style={{ backgroundColor: "rgba(147, 197, 253, 0.1)" }}
           >
             <FiCompass
@@ -124,7 +124,7 @@ export default function Process() {
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-5 md:mb-6">
-            <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
               Our Process
             </span>
           </h2>
@@ -160,7 +160,7 @@ export default function Process() {
                 index === activeIndex
                   ? "text-white shadow-lg"
                   : index < activeIndex
-                  ? "bg-blue-100 text-brand-deep border border-blue-200"
+                  ? "bg-orange-100 text-brand-deep border border-orange-200"
                   : "bg-white/60 text-gray-400 border border-white/50"
               }`}
               whileHover={{ scale: 1.1 }}
@@ -222,7 +222,7 @@ export default function Process() {
                 {/* Content */}
                 <div className="text-center md:text-left flex-1">
                   <div className="flex items-center justify-center md:justify-start gap-3 mb-3 sm:mb-4">
-                    <span className="text-xs sm:text-sm font-semibold text-brand-deep bg-blue-50 px-3 py-1 rounded-full">
+                    <span className="text-xs sm:text-sm font-semibold text-brand-deep bg-orange-50 px-3 py-1 rounded-full">
                       Step {activeStep.number} of {processSteps.length}
                     </span>
                   </div>

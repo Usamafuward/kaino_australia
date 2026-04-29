@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    quote: "Kainovation transformed our approach to data. Their expertise and dedication to our success have been truly remarkable. We couldn't be happier with the results and the seamless integration.",
+    quote: "Nexus Co transformed our approach to data. Their expertise and dedication to our success have been truly remarkable. We couldn't be happier with the results and the seamless integration.",
     author: "Jane Doe",
     role: "Chief Technology Officer",
     company: "Tech Innovators",
@@ -67,7 +67,7 @@ export default function Blog() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
+            className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
             style={{ backgroundColor: "rgba(147, 197, 253, 0.1)" }}
           >
             <FiHeart
@@ -83,13 +83,13 @@ export default function Blog() {
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-5 md:mb-6">
-            <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
               What Our Partners Say
             </span>
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
-            We measure our success by the success of our clients. Here is what they have to say about working with Kainovation.
+            We measure our success by the success of our clients. Here is what they have to say about working with Nexus Co.
           </p>
         </motion.div>
 
@@ -157,7 +157,7 @@ export default function Blog() {
 
                 {/* Quote Card (matches TestimonialCard) */}
                 <motion.div 
-                  className="relative bg-linear-to-br from-white to-blue-50 backdrop-blur-sm border border-blue-100 rounded-xl sm:rounded-2xl p-8 sm:p-12 shadow-md sm:shadow-lg text-center lg:text-left"
+                  className="relative bg-linear-to-br from-white to-blue-50 backdrop-blur-sm border border-orange-100 rounded-xl sm:rounded-2xl p-8 sm:p-12 shadow-md sm:shadow-lg text-center lg:text-left"
                   whileHover={{ 
                     backgroundColor: "rgba(255,255,255,0.95)",
                     boxShadow: "0 20px 50px -15px rgba(125, 95, 255, 0.2)"
@@ -190,7 +190,7 @@ export default function Blog() {
           <div className="flex justify-center items-center gap-4 pt-6">
             <button
               onClick={handlePrevious}
-              className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-blue-50 hover:text-brand-deep hover:border-blue-200 transition-colors shadow-sm"
+              className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-orange-50 hover:text-brand-deep hover:border-orange-200 transition-colors shadow-sm"
               aria-label="Previous testimonial"
             >
               <FiChevronLeft size={24} />
@@ -210,7 +210,7 @@ export default function Blog() {
 
             <button
               onClick={handleNext}
-              className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-blue-50 hover:text-brand-deep hover:border-blue-200 transition-colors shadow-sm"
+              className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-orange-50 hover:text-brand-deep hover:border-orange-200 transition-colors shadow-sm"
               aria-label="Next testimonial"
             >
               <FiChevronRight size={24} />

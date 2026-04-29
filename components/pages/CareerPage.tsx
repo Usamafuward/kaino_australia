@@ -123,7 +123,7 @@ const departmentIcons = {
 
 // Department colors mapping
 const departmentColors = {
-    'IT': 'from-cyan-500 to-blue-600',
+    'IT': 'from-brand-orange to-[#e67900]',
     'Marketing': 'from-emerald-500 to-teal-600',
     'Data Science': 'from-violet-500 to-purple-600',
     'Human Resources': 'from-pink-500 to-rose-600'
@@ -171,7 +171,7 @@ export default function CareerPage() {
             <section className="relative min-h-screen bg-linear-to-br from-brand-deep to-brand-blue text-white flex justify-center items-center overflow-hidden">
                 {/* Background Elements */}
                 <div className="absolute inset-0">
-                    <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
+                    <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl animate-pulse" />
                     <div
                         className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-400/10 rounded-full blur-3xl animate-pulse"
                         style={{ animationDelay: "1s" }}
@@ -194,7 +194,7 @@ export default function CareerPage() {
                     >
                         {/* Badge */}
                         <motion.div
-                            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6"
+                            className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6"
                             variants={itemVariants}
                             whileHover={{ scale: 1.05 }}
                         >
@@ -209,11 +209,11 @@ export default function CareerPage() {
                             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6"
                             variants={itemVariants}
                         >
-                            <span className="bg-linear-to-r from-white via-blue-200 to-slate-200 bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-white via-orange-200 to-slate-200 bg-clip-text text-transparent">
                                 Shape the Future
                             </span>
                             <br />
-                            <span className="bg-linear-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-brand-orange to-[#ffb84d] bg-clip-text text-transparent">
                                 With Us
                             </span>
                         </motion.h1>
@@ -251,7 +251,7 @@ export default function CareerPage() {
 
                         {/* CTA Button */}
                         <motion.button
-                            className="group relative bg-linear-to-r from-brand-blue to-brand-deep text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
+                            className="group relative bg-brand-orange text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-orange/50"
                             variants={itemVariants}
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
@@ -273,7 +273,7 @@ export default function CareerPage() {
             <section id="jobs-section" className="relative bg-slate-50 py-12 sm:py-16 md:py-20">
                 {/* Background Elements */}
                 <div className="absolute inset-0">
-                    <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl" />
+                    <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl" />
                     <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-200/20 rounded-full blur-3xl" />
                 </div>
 
@@ -288,7 +288,7 @@ export default function CareerPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+                        <div className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6">
                             <FiZap className="mr-2 text-base" style={{ color: "#10064C" }} />
                             <span
                                 className="text-base font-medium"
@@ -299,11 +299,11 @@ export default function CareerPage() {
                         </div>
 
                         <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-                            <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                                 Current
                             </span>
                             <br />
-                            <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                                 Opportunities
                             </span>
                         </h2>
@@ -320,7 +320,7 @@ export default function CareerPage() {
                                 placeholder="Search jobs by title, department, or location..."
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
-                                className="w-full pl-16 pr-6 py-5 bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 shadow-lg shadow-brand-blue/ text-md md:text-lg"
+                                className="w-full pl-16 pr-6 py-5 bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-2xl focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-all duration-300 shadow-lg shadow-brand-blue/30 20 text-md md:text-lg"
                             />
                         </div>
                     </motion.div>
@@ -357,7 +357,7 @@ export default function CareerPage() {
                                                 {jobs.map(job => (
                                                     <motion.div 
                                                         key={job.id}
-                                                        className="group bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-brand-blue/ hover:border-blue-300/50 hover:-translate-y-2"
+                                                        className="group bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-brand-blue/30 20 hover:border-orange-300/50 hover:-translate-y-2"
                                                         variants={itemVariants}
                                                         whileHover={{ scale: 1.02 }}
                                                     >
@@ -398,7 +398,7 @@ export default function CareerPage() {
                                                                 <p className="text-xs font-semibold text-gray-700 mb-2">Key Skills:</p>
                                                                 <div className="flex flex-wrap gap-1.5">
                                                                     {job.requirements.slice(0, 4).map((req, idx) => (
-                                                                        <span key={idx} className="px-2 py-1 bg-blue-50 text-brand-deep text-xs rounded-full border border-blue-200">
+                                                                        <span key={idx} className="px-2 py-1 bg-orange-50 text-brand-deep text-xs rounded-full border border-orange-200">
                                                                             {req}
                                                                         </span>
                                                                     ))}
@@ -412,7 +412,7 @@ export default function CareerPage() {
 
                                                             {/* Apply Button */}
                                                             <motion.button
-                                                                className="group/button w-full bg-[#FF8600] hover:bg-[#FF8600]/90 text-white font-semibold py-3 px-6 rounded-xl hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-lg shadow-brand-blue/"
+                                                                className="group/button w-full bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg shadow-brand-orange/50"
                                                                 whileHover={{ scale: 1.02 }}
                                                                 whileTap={{ scale: 0.98 }}
                                                             >
@@ -450,7 +450,7 @@ export default function CareerPage() {
             */}
             <section className="relative bg-slate-50 py-12 sm:py-16 md:py-20">
                 <div className="absolute inset-0">
-                    <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-blue-200/30 rounded-full blur-3xl" />
+                    <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-orange-200/30 rounded-full blur-3xl" />
                     <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-indigo-200/30 rounded-full blur-3xl" />
                 </div>
 
@@ -465,7 +465,7 @@ export default function CareerPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+                        <div className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6">
                             <FiHeart className="mr-2 text-brand-deep" />
                             <span className="text-sm font-medium text-brand-deep">
                                 Don&apos;t See Your Perfect Role?
@@ -473,11 +473,11 @@ export default function CareerPage() {
                         </div>
 
                         <h2 className="text-4xl sm:text-5xl font-black mb-6">
-                            <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                                 We&apos;re Always Looking
                             </span>
                             <br />
-                            <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                                 for Great Talent
                             </span>
                         </h2>
@@ -486,7 +486,7 @@ export default function CareerPage() {
                             Join our talent pool! We&apos;re constantly growing and would love to hear from passionate individuals who share our vision for innovation.
                         </p>
 
-                        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl shadow-brand-blue/ border border-blue-200/50">
+                        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl shadow-brand-blue/30 20 border border-orange-200/50">
                             <h3 className="text-2xl font-bold text-slate-800 mb-4">
                                 Send us your CV
                             </h3>
@@ -494,12 +494,12 @@ export default function CareerPage() {
                                 Email your resume and portfolio to our talent team
                             </p>
                             <motion.a
-                                href="mailto:talent@kainovation.com"
-                                className="inline-flex items-center bg-[#FF8600] hover:bg-[#FF8600]/90 text-white font-bold py-4 px-8 rounded-full shadow-lg shadow-brand-blue/ hover:from-blue-600 hover:to-indigo-700 transition-all duration-300"
+                                href="mailto:talent@nexusco.com"
+                                className="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white font-bold py-4 px-8 rounded-full shadow-lg shadow-brand-orange/50 transition-all duration-300"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                talent@kainovation.com
+                                talent@nexusco.com
                                 <FiArrowRight className="ml-2" />
                             </motion.a>
                         </div>

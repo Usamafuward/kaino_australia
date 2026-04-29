@@ -198,7 +198,7 @@ export default function ProjectsPage() {
       <section className="relative min-h-screen bg-brand-deep text-white flex justify-center items-center overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl animate-pulse" />
           <div
             className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-400/10 rounded-full blur-3xl animate-pulse"
             style={{ animationDelay: "1s" }}
@@ -235,11 +235,11 @@ export default function ProjectsPage() {
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6"
               variants={itemVariants}
             >
-              <span className="bg-linear-to-r from-white via-blue-200 to-slate-200 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-white via-orange-200 to-slate-200 bg-clip-text text-transparent">
                 Next-Gen
               </span>
               <br />
-              <span className="bg-linear-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-orange to-[#ffb84d] bg-clip-text text-transparent">
                 Projects
               </span>
             </motion.h1>
@@ -260,7 +260,7 @@ export default function ProjectsPage() {
               variants={itemVariants}
             >
               <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
-                <FiShield className="text-blue-400 mr-2" />
+                <FiShield className="text-brand-orange mr-2" />
                 <span className="text-sm">Document Processing</span>
               </div>
               <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
@@ -279,7 +279,7 @@ export default function ProjectsPage() {
 
             {/* CTA Button */}
             <motion.button
-              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
+              className="group relative bg-brand-orange text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-orange/50"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -306,7 +306,7 @@ export default function ProjectsPage() {
       >
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-200/20 rounded-full blur-3xl" />
         </div>
 
@@ -321,7 +321,7 @@ export default function ProjectsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+            <div className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6">
               <FiZap className="mr-2 text-base" style={{ color: "#10064C" }} />
               <span
                 className="text-base font-medium"
@@ -332,7 +332,7 @@ export default function ProjectsPage() {
             </div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 Our Projects 
               </span>
             </h2>
@@ -447,7 +447,7 @@ export default function ProjectsPage() {
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2">
                         <motion.div
-                          className={`h-full bg-linear-to-r ${project.gradient} rounded-full`}
+                          className="h-full bg-brand-orange rounded-full"
                           initial={{ width: 0 }}
                           whileInView={{
                             width:

@@ -134,7 +134,7 @@ const BlogCardSkeleton = () => (
       
       {/* Button skeleton */}
       <div className="pt-4 border-t border-gray-200/80">
-        <div className="w-32 h-5 bg-blue-200 rounded animate-pulse"></div>
+        <div className="w-32 h-5 bg-orange-200 rounded animate-pulse"></div>
       </div>
     </div>
   </div>
@@ -328,7 +328,7 @@ export default function BlogPage() {
       {/* Hero Section - Always visible */}
       <section className="relative min-h-screen bg-brand-deep text-white flex justify-center items-center overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl animate-pulse" />
           <div
             className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-400/10 rounded-full blur-3xl animate-pulse"
             style={{ animationDelay: "1s" }}
@@ -360,10 +360,10 @@ export default function BlogPage() {
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6"
               variants={itemVariants}
             >
-              <span className="bg-linear-to-r from-white via-blue-200 to-slate-200 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-white via-orange-200 to-slate-200 bg-clip-text text-transparent">
                 Our
               </span>{" "}
-              <span className="bg-linear-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-orange to-[#ffb84d] bg-clip-text text-transparent">
                 Insights
               </span>
             </motion.h1>
@@ -388,7 +388,7 @@ export default function BlogPage() {
                 <span className="text-sm">AI Technology</span>
               </div>
               <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
-                <FiBookOpen className="text-blue-400 mr-2" />
+                <FiBookOpen className="text-brand-orange mr-2" />
                 <span className="text-sm">Case Studies</span>
               </div>
               <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
@@ -397,7 +397,7 @@ export default function BlogPage() {
               </div>
             </motion.div>
             <motion.button
-              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
+              className="group relative bg-brand-orange text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-orange/50"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -423,7 +423,7 @@ export default function BlogPage() {
         id="blogs"
       >
         <div className="absolute inset-0">
-          <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-blue-100/30 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-orange-100/30 rounded-full blur-3xl" />
           <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl" />
         </div>
         <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-size-[2rem_2rem] sm:bg-size-[3rem_3rem] md:bg-size-[4rem_4rem]" />
@@ -435,7 +435,7 @@ export default function BlogPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+            <div className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6">
               <FiZap className="mr-2 text-base" style={{ color: "#10064C" }} />
               <span
                 className="text-base font-medium"
@@ -445,7 +445,7 @@ export default function BlogPage() {
               </span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 Latest Insights &
               </span>
               <br />
@@ -471,7 +471,7 @@ export default function BlogPage() {
                 placeholder="Search articles..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 bg-white/80 backdrop-blur-sm border border-gray-200/80 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 shadow-sm hover:shadow-md"
+                className="w-full pl-12 pr-4 py-4 bg-white/80 backdrop-blur-sm border border-gray-200/80 rounded-2xl focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-all duration-300 shadow-sm hover:shadow-md"
               />
             </div>
             <div className="relative">
@@ -479,7 +479,7 @@ export default function BlogPage() {
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-full md:w-auto appearance-none pl-12 pr-10 py-4 bg-white/80 backdrop-blur-sm border border-gray-200/80 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 shadow-sm hover:shadow-md"
+                className="w-full md:w-auto appearance-none pl-12 pr-10 py-4 bg-white/80 backdrop-blur-sm border border-gray-200/80 rounded-2xl focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-all duration-300 shadow-sm hover:shadow-md"
               >
                 {categories.map((cat) => (
                   <option key={cat} value={cat}>
@@ -509,7 +509,7 @@ export default function BlogPage() {
                 <p className="text-gray-600 mb-6">{error}</p>
                 <button
                   onClick={() => window.location.reload()}
-                  className="bg-brand-blue hover:bg-brand-deep text-white font-bold py-3 px-6 rounded-full transition-colors"
+                  className="bg-brand-orange hover:bg-brand-orange/90 text-white font-bold py-3 px-6 rounded-full transition-colors"
                 >
                   Retry
                 </button>

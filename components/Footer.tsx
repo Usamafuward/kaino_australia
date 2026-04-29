@@ -20,11 +20,11 @@ const footerLinks = {
   ],
   contact: [
     { icon: FiPhone, text: "+94 77 787 2366", href: "tel:+94777872366" },
-    { icon: FiMail, text: "hello@kainovation.com", href: "mailto:hello@kainovation.com" },
+    { icon: FiMail, text: "hello@nexusco.com", href: "mailto:hello@nexusco.com" },
     { icon: FiMapPin, text: "26A, Rudra Mawatha, Wellawatte, 00600, Sri Lanka", href: "#" }
   ],
   social: [
-    { icon: FiLinkedin, href: "https://www.linkedin.com/company/kainovation-technologies/", name: "LinkedIn" }
+    { icon: FiLinkedin, href: "https://www.linkedin.com/company/nexusco/", name: "LinkedIn" }
   ]
 };
 
@@ -128,13 +128,13 @@ export default function Footer() {
                 className="lg:col-span-1"
               >
                 <motion.h2 className="text-xl sm:text-2xl font-black mb-4 sm:mb-6">
-                  <span className="bg-blue-400 bg-clip-text text-transparent">
-                    KAINO
+                  <span className="text-white">
+                    Nexus
                   </span>
-                  <span className="relative text-white">
-                    VATION
+                  <span className="relative text-brand-orange">
+                    {' '}Co
                     <motion.div
-                      className="absolute -bottom-1 left-0 w-full h-0.5 bg-linear-to-r from-brand-blue to-brand-deep origin-left"
+                      className="absolute -bottom-1 left-0 w-full h-0.5 bg-linear-to-r from-white to-brand-orange origin-left"
                       initial={{ scaleX: 0 }}
                       animate={{ scaleX: 1 }}
                       transition={{ duration: 0.8, delay: 0.2 }}
@@ -142,7 +142,7 @@ export default function Footer() {
                   </span>
                 </motion.h2>
 
-                <p className="text-blue-100 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base pr-4">
+                <p className="text-brand-light mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base pr-4">
                   We are a global technology company specializing in AI-powered
                   data solutions that deliver transformative insights and
                   operational excellence.
@@ -155,7 +155,7 @@ export default function Footer() {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-blue-200 hover:text-white hover:bg-linear-to-r hover:from-blue-500 hover:to-indigo-600 transition-all duration-300"
+                      className="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-brand-light hover:text-white hover:bg-linear-to-r hover:from-brand-orange hover:to-[#e67900] transition-all duration-300"
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.9 }}
                       initial={{ opacity: 0, scale: 0.8 }}
@@ -184,10 +184,10 @@ export default function Footer() {
                     >
                       <motion.a
                         href={link.href}
-                        className="text-blue-200 hover:text-blue-400 transition-colors duration-300 flex items-center group text-sm sm:text-base"
+                        className="text-brand-light hover:text-brand-orange transition-colors duration-300 flex items-center group text-sm sm:text-base"
                         whileHover={{ x: 5 }}
                       >
-                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-400 rounded-full mr-2 sm:mr-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-brand-orange rounded-full mr-2 sm:mr-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                         {link.name}
                       </motion.a>
                     </motion.li>
@@ -211,11 +211,11 @@ export default function Footer() {
                     >
                       <motion.a
                         href={contact.href}
-                        className="flex items-start space-x-2 sm:space-x-3 text-blue-200 hover:text-blue-400 transition-colors duration-300 group text-sm sm:text-base"
+                        className="flex items-start space-x-2 sm:space-x-3 text-brand-light hover:text-brand-orange transition-colors duration-300 group text-sm sm:text-base"
                         whileHover={{ x: 5 }}
                       >
                         <motion.div
-                          className="w-5 h-5 sm:w-6 sm:h-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg flex items-center justify-center mt-0.5 group-hover:bg-linear-to-r group-hover:from-blue-500 group-hover:to-indigo-600 transition-all duration-300 shrink-0"
+                          className="w-5 h-5 sm:w-6 sm:h-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg flex items-center justify-center mt-0.5 group-hover:bg-linear-to-r group-hover:from-brand-orange group-hover:to-[#e67900] transition-all duration-300 shrink-0"
                           whileHover={{ scale: 1.1 }}
                         >
                           <contact.icon size={12} className="sm:text-sm" />
@@ -245,10 +245,10 @@ export default function Footer() {
                     >
                       <motion.a
                         href={service.href}
-                        className="text-blue-200 hover:text-blue-400 transition-colors duration-300 flex items-center group text-sm sm:text-base"
+                        className="text-brand-light hover:text-brand-orange transition-colors duration-300 flex items-center group text-sm sm:text-base"
                         whileHover={{ x: 5 }}
                       >
-                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-400 rounded-full mr-2 sm:mr-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-brand-orange rounded-full mr-2 sm:mr-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                         {service.name}
                       </motion.a>
                     </motion.li>
@@ -261,7 +261,7 @@ export default function Footer() {
                 <h3 className="text-lg sm:text-xl font-bold mb-2 text-white">
                   Newsletter
                 </h3>
-                <p className="text-blue-200 text-sm mb-4">
+                <p className="text-brand-light text-sm mb-4">
                   Get the latest AI and data insights directly in your inbox.
                 </p>
                 <form
@@ -273,7 +273,7 @@ export default function Footer() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter email"
-                    className="w-full px-4 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-brand-blue/ text-sm"
+                    className="w-full px-4 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-brand-orange/50 focus:border-brand-blue/30 30 text-sm"
                     disabled={isLoading}
                   />
                   <motion.button
@@ -307,15 +307,15 @@ export default function Footer() {
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
               <div className="text-center md:text-left">
-                <p className="text-blue-300 text-xs sm:text-sm">
-                  © 2025 Kainovation. All Rights Reserved
+                <p className="text-brand-light text-xs sm:text-sm">
+                  © 2025 Nexus Co. All Rights Reserved
                 </p>
               </div>
 
               <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">
                 <motion.a
                   href="/privacy-policy"
-                  className="text-blue-300 hover:text-blue-400 text-xs sm:text-sm transition-colors"
+                  className="text-brand-light hover:text-brand-orange text-xs sm:text-sm transition-colors"
                   whileHover={{ scale: 1.05 }}
                 >
                   Privacy Policy
@@ -364,11 +364,11 @@ export default function Footer() {
               </p>
 
               {/* Newsletter Details */}
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+              <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-6">
                 <div className="flex items-center justify-center gap-3 text-gray-700 text-sm mb-2">
                   <FiMail className="text-brand-deep" />
                   <span className="font-medium">
-                    Welcome to Kainovation Newsletter
+                    Welcome to Nexus Co Newsletter
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm">
@@ -379,7 +379,7 @@ export default function Footer() {
               {/* Action Button */}
               <button
                 onClick={() => setShowSuccess(false)}
-                className="w-full bg-brand-blue text-white font-semibold py-3 rounded-lg hover:bg-brand-deep transition-colors"
+                className="w-full bg-brand-orange text-white font-semibold py-3 rounded-lg hover:bg-brand-orange/90 transition-colors"
               >
                 Awesome, thanks!
               </button>

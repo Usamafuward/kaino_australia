@@ -67,7 +67,7 @@ export default function Clients() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
+            className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
             style={{ backgroundColor: "rgba(147, 197, 253, 0.1)" }}
           >
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-brand-blue rounded-full mr-2 animate-pulse" />
@@ -80,7 +80,7 @@ export default function Clients() {
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-3 sm:mb-4">
-            <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
               Our Clients
             </span>
           </h2>
@@ -102,7 +102,7 @@ export default function Clients() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
+            className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 md:px-6 md:py-2 mb-4 sm:mb-5 md:mb-6"
             style={{ backgroundColor: "rgba(147, 197, 253, 0.1)" }}
           >
             <FiZap
@@ -118,8 +118,8 @@ export default function Clients() {
           </motion.div>
 
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black mb-3 sm:mb-4">
-            <span className="bg-linear-to-r from-[#10064C] to-[#3B82F6] bg-clip-text text-transparent">
-              Why Kainovation
+            <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
+              Why Nexus Co
             </span>
           </h3>
         </motion.div>

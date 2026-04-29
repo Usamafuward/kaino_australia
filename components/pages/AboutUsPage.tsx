@@ -46,34 +46,13 @@ const leadershipTeam: TeamMember[] = [
     linkedinUrl: "https://www.linkedin.com/in/shayen-yatagama/",
   },
   {
-    name: "Pasindu Jayathilaka",
-    title: "Co-Founder & Director",
-    bio: "Pasindu is an entrepreneur who graduated from the University of Colombo and a CIMA(UK) passed finalist. Having worked as a Business Analyst and a Product Manager he has designed and developed BI solutions for several fortune 500 companies. Pasindu is passionate about Social and HR data analytics and has a proven track record of delivering BI and software solutions in multiple domains including Banking, HR, and E-Commerce. He is determined to help Sri Lanka become the world's IT powerhouse!",
-    image: pasindu,
-    linkedinUrl: "https://www.linkedin.com/in/pasindut/",
-  },
-  {
-    name: "Thulith Edirisinghe",
-    title: "Co-Founder & Director",
-    bio: "Thulith is a Mechanical Engineer from Massachusetts Institute of Technology, USA and a UWC Atlantic college alumni. He has experience of working in five countries across four continents, in diverse industries such as AI, E-commerce, Education, Renewable energy, Agriculture and even Biotech. Thulith strives to leverage his diverse experience to help organisation integrate the power of Data and AI to solve challenging problems and adapt to industry 4.0",
-    image: thulith,
-    linkedinUrl: "https://www.linkedin.com/in/thulith-edirisinghe-46826988/",
-  },
-  {
     name: "Luke",
     title: "Chief Creative Officer",
     bio: "",
     image: null,
     linkedinUrl: "#",
     initials: "L",
-  },
-  {
-    name: "Biman Kasun Wimalaratne",
-    title: "Business Development Partner",
-    bio: "Passionate in connecting technology to empower communities, create sustainable wealth and improve our experience of life. Trained, educated and worked in London and Sydney, and here to take great Sri Lankan products and services to the world. Telling a better tech-enabled story.",
-    image: biman,
-    linkedinUrl: "https://www.linkedin.com/in/biman-wimalaratne-bb3804b7/",
-  },
+  }
 ];
 
 const values = [
@@ -89,21 +68,21 @@ const values = [
     description:
       "Decisions are backed by real insights, not assumptions. We use data to inform, measure, and continuously improve outcomes.",
     icon: FiBarChart2,
-    color: "indigo",
+    color: "blue",
   },
   {
     title: "Authentic",
     description:
       "We build genuine partnerships rooted in transparency, honesty, and shared ambition. No fluff, no false promises.",
     icon: FiHeart,
-    color: "sky",
+    color: "blue",
   },
   {
     title: "Relentless excellence",
     description:
       "Good enough isn't enough. We hold ourselves to the highest standard in everything we deliver, every time.",
     icon: FiAward,
-    color: "violet",
+    color: "blue",
   },
 ];
 
@@ -131,7 +110,7 @@ export default function AboutPage() {
       <section className="relative min-h-screen bg-brand-deep text-white flex justify-center items-center overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl animate-pulse" />
           <div
             className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-400/10 rounded-full blur-3xl animate-pulse"
             style={{ animationDelay: "1s" }}
@@ -168,11 +147,11 @@ export default function AboutPage() {
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6"
               variants={itemVariants}
             >
-              <span className="bg-linear-to-r from-white via-blue-200 to-slate-200 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-white via-orange-200 to-slate-200 bg-clip-text text-transparent">
                 Built on the belief
               </span>
               <br />
-              <span className="bg-linear-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-orange to-[#ffb84d] bg-clip-text text-transparent">
                 that better is possible
               </span>
             </motion.h1>
@@ -188,7 +167,7 @@ export default function AboutPage() {
 
             {/* CTA Button */}
             <motion.button
-              className="group relative bg-brand-blue text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-blue/"
+              className="group relative bg-brand-orange text-white font-bold py-4 px-10 rounded-full overflow-hidden shadow-2xl shadow-brand-orange/50"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -215,7 +194,7 @@ export default function AboutPage() {
       >
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-blue-100/30 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-orange-100/30 rounded-full blur-3xl" />
           <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl" />
         </div>
 
@@ -231,7 +210,7 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
           >
             {/* Badge */}
-            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6">
               <FiBookOpen className="mr-2 text-brand-deep" />
               <span className="text-sm font-medium text-brand-deep">
                 How It Started
@@ -239,7 +218,7 @@ export default function AboutPage() {
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 Our Story
               </span>
             </h2>
@@ -256,7 +235,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-linear-to-tr from-blue-500/10 to-transparent z-10" />
               <Image
                 src={all}
-                alt="Kainovation Team"
+                alt="Nexus Co Team"
                 className="w-full h-auto object-cover"
                 placeholder="blur"
               />
@@ -286,7 +265,7 @@ export default function AboutPage() {
                   or technology &mdash; it was in the space between them.
                 </p>
 
-                <div className="bg-linear-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6 space-y-3">
+                <div className="bg-linear-to-r from-blue-50 to-indigo-50 border border-orange-200 rounded-xl p-6 space-y-3">
                   <p className="text-gray-700 font-medium">
                     Strategy was disconnected from execution.
                   </p>
@@ -305,7 +284,7 @@ export default function AboutPage() {
                 <p className="text-lg text-gray-600 leading-relaxed">
                   And that&apos;s how{" "}
                   <span className="font-bold" style={{ color: "#10064C" }}>
-                    Kainovation
+                    Nexus Co
                   </span>{" "}
                   began &mdash; built on the belief that better outcomes come from
                   connecting the dots, end to end.
@@ -329,7 +308,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6">
               <FiTarget className="mr-2 text-brand-deep" />
               <span className="text-sm font-medium text-brand-deep">
                 Our Purpose
@@ -337,7 +316,7 @@ export default function AboutPage() {
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 Mission
               </span>
             </h2>
@@ -371,7 +350,7 @@ export default function AboutPage() {
       <section className="relative bg-slate-50 py-12 sm:py-16 md:py-20">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/6 w-80 h-80 bg-blue-100/30 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/6 w-80 h-80 bg-orange-100/30 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/6 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl" />
         </div>
 
@@ -386,7 +365,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-2 mb-6">
+            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-2 mb-6">
               <FiHeart className="mr-2 text-brand-deep" />
               <span className="text-sm font-medium text-brand-deep">
                 What We Stand For
@@ -394,7 +373,7 @@ export default function AboutPage() {
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 Values & Beliefs
               </span>
             </h2>
@@ -409,9 +388,9 @@ export default function AboutPage() {
           >
             {values.map((value) => {
               const colorMap: Record<string, { bg: string; icon: string; border: string }> = {
-                blue: { bg: "bg-blue-100", icon: "text-brand-deep", border: "hover:border-blue-200" },
+                blue: { bg: "bg-orange-100", icon: "text-brand-deep", border: "hover:border-orange-200" },
                 indigo: { bg: "bg-indigo-100", icon: "text-brand-deep", border: "hover:border-indigo-200" },
-                sky: { bg: "bg-sky-100", icon: "text-brand-blue", border: "hover:border-sky-200" },
+                sky: { bg: "bg-sky-100", icon: "text-brand-orange", border: "hover:border-sky-200" },
                 violet: { bg: "bg-violet-100", icon: "text-violet-600", border: "hover:border-violet-200" },
               };
               const colors = colorMap[value.color];
@@ -446,7 +425,7 @@ export default function AboutPage() {
       <section id="team" className="relative bg-slate-50 py-12 sm:py-16 md:py-20">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-200/20 rounded-full blur-3xl" />
         </div>
 
@@ -462,15 +441,15 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
           >
             {/* Badge */}
-            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/ to-brand-deep/ backdrop-blur-sm border border-brand-blue/ rounded-full px-6 py-3 mb-8">
+            <motion.div className="inline-flex items-center bg-linear-to-r from-brand-blue/20 to-brand-deep/20  backdrop-blur-sm border border-brand-blue/30 30 rounded-full px-6 py-3 mb-8">
               <FiUsers className="mr-2 text-brand-deep" />
               <span className="text-sm font-medium text-brand-deep">
-                The People Behind Kainovation
+                The People Behind Nexus Co
               </span>
             </motion.div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              <span className="bg-linear-to-r from-brand-deep to-brand-blue bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-brand-deep to-brand-orange bg-clip-text text-transparent">
                 Meet the Team
               </span>
             </h2>
@@ -484,14 +463,14 @@ export default function AboutPage() {
             {leadershipTeam.map((member, index) => (
               <motion.div
                 key={member.name}
-                className="group relative bg-linear-to-br from-white to-blue-50/30 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-blue-100/50"
+                className="group relative bg-linear-to-br from-white to-blue-50/30 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-orange-100/50"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-linear-to-br from-brand-blue/ to-brand-deep/ rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-br from-brand-blue/20 to-brand-deep/20  rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="relative z-10 flex flex-col sm:flex-row items-start gap-6">
                   <div className="shrink-0 w-full sm:w-48">
@@ -520,7 +499,7 @@ export default function AboutPage() {
                         <h3 className="text-xl font-bold text-slate-800 group-hover:text-brand-deep transition-colors duration-300">
                           {member.name}
                         </h3>
-                        <p className="text-sm text-brand-deep font-semibold bg-blue-50 px-3 py-1 rounded-full inline-block mt-1">
+                        <p className="text-sm text-brand-deep font-semibold bg-orange-50 px-3 py-1 rounded-full inline-block mt-1">
                           {member.title}
                         </p>
                       </div>
@@ -530,7 +509,7 @@ export default function AboutPage() {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={`${member.name}'s LinkedIn Profile`}
-                          className="text-brand-deep hover:text-brand-deep transition-colors duration-300 ml-4 bg-blue-50 p-2 rounded-full hover:bg-blue-100"
+                          className="text-brand-deep hover:text-brand-deep transition-colors duration-300 ml-4 bg-orange-50 p-2 rounded-full hover:bg-orange-100"
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.95 }}
                         >

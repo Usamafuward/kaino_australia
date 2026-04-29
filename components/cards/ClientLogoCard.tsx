@@ -87,7 +87,7 @@ export default function ClientLogoCard() {
               variants={floatingVariants}
             >
               {/* Gradient overlay on hover */}
-              <motion.div className="absolute inset-0 bg-linear-to-br from-brand-blue/ to-brand-deep/ opacity-0 hover:opacity-100 transition-opacity duration-300" />
+              <motion.div className="absolute inset-0 bg-linear-to-br from-brand-blue/20 to-brand-deep/20  opacity-0 hover:opacity-100 transition-opacity duration-300" />
 
               {/* Client logo */}
               <div className="relative z-10 p-3 sm:p-4 w-full h-full flex items-center justify-center border-2 border-brand-orange rounded-2xl">
