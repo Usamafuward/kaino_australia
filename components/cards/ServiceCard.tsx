@@ -118,7 +118,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </p>
 
         {/* Features */}
-        <div className="grid grid-cols-2 xs:grid-cols-2 gap-3 sm:gap-4">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4">
           {features.map((feature, featureIndex) => (
             <motion.div
               key={feature}
@@ -152,7 +152,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           >
             <Link href={`/services/${serviceId}`}>
               <motion.button
-                className={`group relative bg-linear-to-r ${gradient} text-white font-bold py-3 px-8 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-shadow`}
+                className={`group relative bg-brand-orange text-white font-bold py-3 px-8 rounded-full overflow-hidden shadow-lg shadow-brand-orange/50 hover:shadow-xl transition-shadow`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -170,7 +170,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       {/* Visual Element */}
       <div className="w-full lg:w-5/12 mt-8 lg:mt-0 lg:mx-10">
         <motion.div
-          className="relative w-full mx-auto aspect-5/4 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl"
+          className="relative w-full mx-auto aspect-4/3 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.3 }}
         >
